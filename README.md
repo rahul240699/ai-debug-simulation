@@ -2,8 +2,6 @@
 
 A multi-agent dungeon simulation built for demonstrating **agent observability and legibility**. Two LLM-powered agents navigate a grid to find a key and reach an exit, while every decision is captured in structured traces for human diagnosis.
 
-See [TECHNICAL_PLAN.md](TECHNICAL_PLAN.md) for the full architecture and design.
-
 ## Quick Start
 
 ```bash

@@ -75,7 +75,7 @@ class DungeonState:
     agents: dict[str, AgentState] = field(default_factory=dict)
 
     turn_number: int = 0
-    max_turns: int = 100
+    max_turns: int = 20
     turn_order: list[str] = field(default_factory=lambda: ["agent_a", "agent_b"])
     active_agent_idx: int = 0
 
