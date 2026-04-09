@@ -20,6 +20,7 @@ from src.simulation.dungeon_master import (
 )
 from src.agents.graph import build_graph, reset_beliefs
 from src.instrumentation.trace_builder import start_trace, end_trace
+from src.legibility.router import router as legibility_router
 
 logger = logging.getLogger(__name__)
 
@@ -31,6 +32,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(legibility_router)
 
 
 @app.get("/health")
