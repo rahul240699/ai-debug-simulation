@@ -6,7 +6,7 @@ import argparse
 import logging
 import sys
 
-from src.config import GRID_HEIGHT, GRID_WIDTH, MAX_TURNS, WALL_DENSITY
+from src.config import GRID_HEIGHT, GRID_WIDTH, MAX_TURNS, WALL_DENSITY, DM_STALE_TURNS
 from src.simulation.grid import create_grid
 from src.simulation.dungeon_master import render_grid
 from src.agents.graph import build_graph, reset_beliefs
@@ -20,6 +20,8 @@ def main() -> None:
     parser.add_argument("--width", type=int, default=GRID_WIDTH)
     parser.add_argument("--height", type=int, default=GRID_HEIGHT)
     parser.add_argument("--wall-density", type=float, default=WALL_DENSITY)
+    parser.add_argument("--dm-stale-turns", type=int, default=DM_STALE_TURNS,
+                        help="How many turns stale the DM oracle's view is.")
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args()
 
@@ -57,6 +59,7 @@ def main() -> None:
     print()
 
     dungeon.max_turns = args.turns
+    dungeon.dm_stale_turns = args.dm_stale_turns
 
     # 2. Start Langfuse trace and build graph.
     reset_beliefs()

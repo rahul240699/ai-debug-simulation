@@ -114,6 +114,20 @@ def detect_discrepancies(
                         "to": actual_partner,
                     })
 
+    # ── 6. DM oracle stale advice ──────────────────────────────────────
+    dm_stale = action_result.get("stale_turns_count")
+    dm_advice = action_result.get("advice")
+    if dm_stale is not None and dm_stale > 0 and dm_advice:
+        discrepancies.append(
+            f"DM oracle advice is {dm_stale} turns stale: \"{dm_advice[:100]}\""
+        )
+        diff.append({
+            "op": "info",
+            "path": "/dm_oracle",
+            "stale_turns_count": dm_stale,
+            "advice": dm_advice,
+        })
+
     detected = len(discrepancies) > 0
     details = "; ".join(discrepancies) if detected else None
     return detected, details, diff if diff else None

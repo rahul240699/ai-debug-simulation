@@ -106,6 +106,9 @@ def record_turn_span(run_id: str, event: EventRecord) -> None:
         "discrepancy_detected": event.discrepancy_detected,
         "discrepancy_details": event.discrepancy_details,
         "belief_diff": event.belief_diff,
+        "dm_query": event.dm_query,
+        "dm_advice": event.dm_advice,
+        "stale_turns_count": event.dm_stale_turns_count,
     }
 
     metadata = {
@@ -113,6 +116,9 @@ def record_turn_span(run_id: str, event: EventRecord) -> None:
         "agent_id": event.agent_id,
         "discrepancy_detected": event.discrepancy_detected,
         "message_correlation_ids": event.message_correlation_ids,
+        "dm_query": event.dm_query,
+        "dm_advice": event.dm_advice,
+        "stale_turns_count": event.dm_stale_turns_count,
     }
 
     level = "WARNING" if event.discrepancy_detected else "DEFAULT"

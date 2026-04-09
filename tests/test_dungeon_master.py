@@ -236,6 +236,144 @@ class TestWinCondition:
 # ── Render test ──────────────────────────────────────────────────────────────
 
 
+class TestQueryDM:
+    """Tests for query_dm action and DM oracle with stale snapshots."""
+
+    def test_query_dm_returns_success(self):
+        state = _make_simple_dungeon()
+        result = execute_action(state, "agent_a", "query_dm", {"question": "Where is the key?"})
+        assert result["success"] is True
+        assert result["action"] == "query_dm"
+        assert "advice" in result
+        assert "key" in result["advice"].lower()
+
+    def test_query_dm_stale_turns_on_turn_0(self):
+        state = _make_simple_dungeon()
+        # First observation creates snapshot at turn 0
+        get_observation(state, "agent_a")
+        result = execute_action(state, "agent_a", "query_dm", {"question": "Where is the key?"})
+        # On turn 0 with stale_turns=2, the snapshot IS turn 0  → stale_turns_count = 0
+        assert result["stale_turns_count"] == 0
+
+    def test_query_dm_stale_after_turns(self):
+        state = _make_simple_dungeon()
+        state.dm_stale_turns = 2
+        # Simulate 3 turns, taking snapshots at each
+        for turn in range(3):
+            state.turn_number = turn
+            state.take_snapshot()
+        state.turn_number = 3
+        state.take_snapshot()
+        result = execute_action(state, "agent_a", "query_dm", {"question": "Where is the key?"})
+        # turn=3, stale=2 → target=1 → snapshot 1 used → stale_turns_count = 2
+        assert result["stale_turns_count"] == 2
+        assert result["snapshot_turn"] == 1
+
+    def test_query_dm_reports_stale_key_position(self):
+        """The DM should report the key's OLD position even after it's picked up."""
+        state = _make_simple_dungeon()
+        state.dm_stale_turns = 2
+        # Turn 0: key at (2,2)
+        state.turn_number = 0
+        state.take_snapshot()
+        # Turn 1: key at (2,2)
+        state.turn_number = 1
+        state.take_snapshot()
+        # Turn 2: agent picks up key
+        state.agents["agent_a"].position = (2, 2)
+        execute_action(state, "agent_a", "pick_up_item")
+        assert state.key_position is None
+        state.turn_number = 2
+        state.take_snapshot()
+        # Turn 3: query DM → sees turn 1 snapshot where key was still at (2,2)
+        state.turn_number = 3
+        result = execute_action(state, "agent_a", "query_dm", {"question": "Where is the key?"})
+        assert "(2,2)" in result["advice"]
+        assert result["stale_turns_count"] == 2
+
+    def test_query_dm_door_exit_keywords(self):
+        state = _make_simple_dungeon()
+        get_observation(state, "agent_a")
+        result = execute_action(state, "agent_a", "query_dm", {"question": "Where is the exit?"})
+        assert "exit" in result["advice"].lower() or "door" in result["advice"].lower()
+
+    def test_query_dm_partner_keyword(self):
+        state = _make_simple_dungeon()
+        get_observation(state, "agent_a")
+        result = execute_action(state, "agent_a", "query_dm", {"question": "Where is my partner?"})
+        assert "agent_b" in result["advice"]
+
+    def test_query_dm_no_history_uses_current(self):
+        """When no snapshots exist, DM uses current state."""
+        state = _make_simple_dungeon()
+        # Don't call get_observation or take_snapshot
+        result = execute_action(state, "agent_a", "query_dm", {"question": "Where is the key?"})
+        assert result["success"] is True
+        assert "(2,2)" in result["advice"]
+        assert result["stale_turns_count"] == 0
+
+
+class TestWorldSnapshot:
+    """Tests for WorldSnapshot creation and stale lookup."""
+
+    def test_take_snapshot_stores_correctly(self):
+        state = _make_simple_dungeon()
+        state.take_snapshot()
+        assert 0 in state.history
+        snap = state.history[0]
+        assert snap.turn_number == 0
+        assert snap.key_position == (2, 2)
+        assert snap.agent_positions["agent_a"] == (1, 1)
+
+    def test_snapshot_is_deep_copy(self):
+        state = _make_simple_dungeon()
+        state.take_snapshot()
+        # Mutate the original grid
+        state.grid[1][1] = "wall"
+        # Snapshot should still have "empty"
+        assert state.history[0].grid[1][1] == "empty"
+
+    def test_get_stale_snapshot_returns_correct_turn(self):
+        state = _make_simple_dungeon()
+        state.dm_stale_turns = 2
+        for t in range(5):
+            state.turn_number = t
+            state.take_snapshot()
+        state.turn_number = 4
+        snap = state.get_stale_snapshot()
+        assert snap is not None
+        assert snap.turn_number == 2  # 4 - 2 = 2
+
+    def test_get_stale_snapshot_returns_oldest_if_missing(self):
+        state = _make_simple_dungeon()
+        state.dm_stale_turns = 10
+        state.turn_number = 3
+        state.take_snapshot()
+        snap = state.get_stale_snapshot()
+        # target = max(0, 3-10) = 0, but only turn 3 exists; walks back, finds nothing
+        # Actually, let's check: target=0, walks from 0 down to 0, no entry.
+        # So it returns None. Let's test with turn 0 snapshot.
+        state2 = _make_simple_dungeon()
+        state2.dm_stale_turns = 10
+        state2.turn_number = 0
+        state2.take_snapshot()
+        state2.turn_number = 5
+        snap2 = state2.get_stale_snapshot()
+        assert snap2 is not None
+        assert snap2.turn_number == 0
+
+    def test_get_stale_snapshot_none_when_no_history(self):
+        state = _make_simple_dungeon()
+        snap = state.get_stale_snapshot()
+        assert snap is None
+
+    def test_observation_creates_snapshot(self):
+        state = _make_simple_dungeon()
+        assert len(state.history) == 0
+        get_observation(state, "agent_a")
+        assert 0 in state.history
+
+
 class TestRender:
     def test_render_grid_contains_agents(self):
         state = _make_simple_dungeon()

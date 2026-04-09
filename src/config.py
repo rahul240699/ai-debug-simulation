@@ -20,6 +20,7 @@ GRID_WIDTH: int = int(os.getenv("GRID_WIDTH", "8"))
 GRID_HEIGHT: int = int(os.getenv("GRID_HEIGHT", "8"))
 MAX_TURNS: int = int(os.getenv("MAX_TURNS", "100"))
 WALL_DENSITY: float = float(os.getenv("WALL_DENSITY", "0.15"))
+DM_STALE_TURNS: int = int(os.getenv("DM_STALE_TURNS", "2"))
 
 # ── Langfuse ──────────────────────────────────────────────────────────────────
 LANGFUSE_PUBLIC_KEY: str = os.getenv("LANGFUSE_PUBLIC_KEY", "")

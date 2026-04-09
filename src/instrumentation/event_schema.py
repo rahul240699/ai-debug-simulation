@@ -44,5 +44,10 @@ class EventRecord:
     # Message correlation.
     message_correlation_ids: list[str] = field(default_factory=list)
 
+    # DM oracle metadata.
+    dm_query: str | None = None
+    dm_advice: str | None = None
+    dm_stale_turns_count: int | None = None
+
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

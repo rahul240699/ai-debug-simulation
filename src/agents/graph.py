@@ -185,6 +185,15 @@ def record_node(state: GraphState) -> dict[str, Any]:
     msg_corr = state.get("message_correlation_ids", [])
     msg_corr += action_result.get("correlation_ids", [])
 
+    # ── DM oracle metadata ───────────────────────────────────────────────
+    dm_query = None
+    dm_advice = None
+    dm_stale = None
+    if state["action_name"] == "query_dm":
+        dm_query = state["action_args"].get("question", "")
+        dm_advice = action_result.get("advice", "")
+        dm_stale = action_result.get("stale_turns_count", 0)
+
     # ── Build EventRecord ────────────────────────────────────────────────
     event = EventRecord(
         run_id=dungeon.run_id,
@@ -202,6 +211,9 @@ def record_node(state: GraphState) -> dict[str, Any]:
         discrepancy_details=details,
         belief_diff=diff,
         message_correlation_ids=msg_corr,
+        dm_query=dm_query,
+        dm_advice=dm_advice,
+        dm_stale_turns_count=dm_stale,
     )
 
     dungeon.event_log.append(event.to_dict())

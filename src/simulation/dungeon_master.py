@@ -7,7 +7,7 @@ from typing import Any
 
 from src.simulation.grid import is_in_bounds, neighbor_position
 from src.simulation.items import CellType, DIRECTIONS
-from src.simulation.state import AgentState, DungeonState, PendingMessage
+from src.simulation.state import AgentState, DungeonState, PendingMessage, WorldSnapshot
 
 
 # ── Observation (Fog of War) ─────────────────────────────────────────────────
@@ -19,6 +19,10 @@ def get_observation(state: DungeonState, agent_id: str) -> dict[str, Any]:
     Reveals the agent's own cell and the 4 orthogonal neighbours.
     Also delivers any messages that arrived (sent last turn).
     """
+    # Take a snapshot before each observation so the DM oracle history is current.
+    if state.turn_number not in state.history:
+        state.take_snapshot()
+
     agent = state.agents[agent_id]
     r, c = agent.position
 
@@ -91,6 +95,8 @@ def execute_action(
         return _do_unlock_door(state, agent)
     elif action == "send_message":
         return _do_send_message(state, agent, action_args.get("text", ""))
+    elif action == "query_dm":
+        return query_dm_oracle(state, agent_id, action_args.get("question", ""))
     elif action == "wait":
         return _result(True, "wait", agent.position, "Waited.")
     else:
@@ -136,6 +142,125 @@ def check_win(state: DungeonState) -> bool:
                     state.win = True
                     return True
     return False
+
+
+# ── DM Oracle (intentionally stale) ─────────────────────────────────────────
+
+
+def query_dm_oracle(
+    state: DungeonState,
+    agent_id: str,
+    question: str,
+) -> dict[str, Any]:
+    """Answer an agent's question using a snapshot *dm_stale_turns* turns old.
+
+    The DM has a global view but sees the world as it was N turns ago.
+    This is the intentional source of stale information.
+
+    Returns a dict with the DM's advice and metadata about staleness.
+    """
+    snapshot = state.get_stale_snapshot()
+    current_turn = state.turn_number
+    stale_turns = 0
+
+    if snapshot is None:
+        # No history yet — use current state (turn 0).
+        snapshot_grid = state.grid
+        snapshot_key = state.key_position
+        snapshot_door = state.door_position
+        snapshot_exit = state.exit_position
+        snapshot_agents = {aid: a.position for aid, a in state.agents.items()}
+        snapshot_turn = current_turn
+    else:
+        snapshot_grid = snapshot.grid
+        snapshot_key = snapshot.key_position
+        snapshot_door = snapshot.door_position
+        snapshot_exit = snapshot.exit_position
+        snapshot_agents = snapshot.agent_positions
+        snapshot_turn = snapshot.turn_number
+        stale_turns = current_turn - snapshot_turn
+
+    # Build advice based on the stale snapshot.
+    q = question.lower().strip()
+    advice_parts: list[str] = []
+
+    if "key" in q:
+        if snapshot_key is not None:
+            advice_parts.append(
+                f"The key is at ({snapshot_key[0]},{snapshot_key[1]})."
+            )
+        else:
+            advice_parts.append("The key has already been picked up.")
+
+    if "door" in q or "exit" in q:
+        if snapshot_door is not None:
+            advice_parts.append(
+                f"The locked door is at ({snapshot_door[0]},{snapshot_door[1]})."
+            )
+        else:
+            advice_parts.append("The door has been unlocked.")
+        if snapshot_exit is not None:
+            advice_parts.append(
+                f"The exit is at ({snapshot_exit[0]},{snapshot_exit[1]})."
+            )
+
+    if "partner" in q or "agent" in q:
+        partner_id = [aid for aid in state.turn_order if aid != agent_id]
+        for pid in partner_id:
+            pos = snapshot_agents.get(pid)
+            if pos:
+                advice_parts.append(
+                    f"{pid} is at ({pos[0]},{pos[1]})."
+                )
+
+    if "path" in q or "direction" in q or "where" in q or "navigate" in q:
+        # Give general direction advice based on key/exit
+        agent_pos = snapshot_agents.get(agent_id, (0, 0))
+        if snapshot_key is not None:
+            dr = "south" if snapshot_key[0] > agent_pos[0] else "north"
+            dc = "east" if snapshot_key[1] > agent_pos[1] else "west"
+            advice_parts.append(
+                f"From your position, the key is to the {dr}-{dc} "
+                f"at ({snapshot_key[0]},{snapshot_key[1]})."
+            )
+
+    if "wall" in q or "cell" in q or "around" in q:
+        agent_pos = snapshot_agents.get(agent_id, (0, 0))
+        for direction, (dr, dc) in DIRECTIONS.items():
+            nr, nc = agent_pos[0] + dr, agent_pos[1] + dc
+            if is_in_bounds(nr, nc, state.grid_height, state.grid_width):
+                cell = snapshot_grid[nr][nc]
+                advice_parts.append(f"  {direction}: {cell}")
+
+    # Default response if no keywords matched.
+    if not advice_parts:
+        if snapshot_key is not None:
+            advice_parts.append(
+                f"The key is at ({snapshot_key[0]},{snapshot_key[1]}). "
+                f"Head there first."
+            )
+        elif snapshot_door is not None:
+            advice_parts.append(
+                f"The key has been picked up. "
+                f"The locked door is at ({snapshot_door[0]},{snapshot_door[1]})."
+            )
+        else:
+            advice_parts.append("The door is unlocked. Head to the exit.")
+
+    advice_text = " ".join(advice_parts)
+
+    return {
+        "success": True,
+        "action": "query_dm",
+        "advice": advice_text,
+        "stale_turns_count": stale_turns,
+        "snapshot_turn": snapshot_turn,
+        "current_turn": current_turn,
+        "message": f"DM Oracle (viewing turn {snapshot_turn}, {stale_turns} turns stale): {advice_text}",
+        "new_position": list(state.agents[agent_id].position),
+        "game_over": False,
+        "win": False,
+    }
 
 
 # ── Private action helpers ───────────────────────────────────────────────────

@@ -78,6 +78,31 @@ TOOL_SCHEMAS: list[dict] = [
             "parameters": {"type": "object", "properties": {}},
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "query_dm",
+            "description": (
+                "Ask the Dungeon Master a question. The DM has a global view of the dungeon "
+                "and can tell you where the key, exit, door, or your partner is. "
+                "Use this when you are lost or need direction. "
+                "NOTE: The DM's information may be slightly outdated."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "question": {
+                        "type": "string",
+                        "description": (
+                            "What to ask the DM. Include keywords like 'key', 'exit', "
+                            "'door', 'partner', 'path', 'direction' for best results."
+                        ),
+                    }
+                },
+                "required": ["question"],
+            },
+        },
+    },
 ]
 
 
@@ -91,6 +116,8 @@ def parse_tool_call(tool_name: str, tool_args: dict) -> tuple[str, dict]:
         return "unlock_door", {}
     elif tool_name == "send_message":
         return "send_message", {"text": tool_args.get("text", "")}
+    elif tool_name == "query_dm":
+        return "query_dm", {"question": tool_args.get("question", "")}
     elif tool_name == "wait":
         return "wait", {}
     else:

@@ -176,6 +176,49 @@ class TestDiscrepancy:
         assert detected is False
 
 
+# ── DM Oracle discrepancy tests ──────────────────────────────────────────────
+
+
+class TestDMOracleDiscrepancy:
+    def test_stale_dm_advice_flagged(self):
+        belief = {"grid_knowledge": {}, "key_location": None, "partner_location": None}
+        obs = _obs()
+        result = {
+            **_result(),
+            "action": "query_dm",
+            "stale_turns_count": 3,
+            "advice": "The key is at (2,2).",
+        }
+        detected, details, diff = detect_discrepancies(belief, obs, result)
+        assert detected is True
+        assert "stale" in details.lower()
+        assert "3" in details
+
+    def test_fresh_dm_advice_not_flagged(self):
+        belief = {"grid_knowledge": {}, "key_location": None, "partner_location": None}
+        obs = _obs()
+        result = {
+            **_result(),
+            "action": "query_dm",
+            "stale_turns_count": 0,
+            "advice": "The key is at (2,2).",
+        }
+        detected, details, diff = detect_discrepancies(belief, obs, result)
+        assert detected is False
+
+    def test_dm_stale_advice_diff_contains_info(self):
+        belief = {"grid_knowledge": {}, "key_location": None, "partner_location": None}
+        obs = _obs()
+        result = {
+            **_result(),
+            "stale_turns_count": 2,
+            "advice": "Partner at (1,1).",
+        }
+        detected, _, diff = detect_discrepancies(belief, obs, result)
+        assert detected is True
+        assert any(d.get("op") == "info" and d.get("path") == "/dm_oracle" for d in diff)
+
+
 # ── Message correlation tests ────────────────────────────────────────────────
 
 

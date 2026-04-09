@@ -30,6 +30,7 @@ AVAILABLE TOOLS:
 - pick_up_item()        → pick up the key (must be on same cell)
 - unlock_door()         → unlock the locked door (must be adjacent, must have key)
 - send_message(text)    → send a message to your partner (delivered next turn)
+- query_dm(question)    → ask the Dungeon Master for advice (global view, may be slightly outdated)
 - wait()                → do nothing
 
 Think step-by-step about what you observe, then call exactly one tool.
@@ -60,6 +61,11 @@ def build_turn_message(observation: dict[str, Any]) -> str:
     if messages:
         for m in messages:
             lines.append(f"Message from {m['from']} (sent turn {m['sent_turn']}): \"{m['text']}\"")
+
+    # Include DM advice if the agent queried the DM last turn.
+    dm_advice = observation.get("dm_advice")
+    if dm_advice:
+        lines.append(f"DM Advisor says: \"{dm_advice}\"")
 
     lines.append("Choose your action.")
     return "\n".join(lines)
