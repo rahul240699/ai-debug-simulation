@@ -33,6 +33,7 @@ router = APIRouter(prefix="/api", tags=["legibility"])
 _completed_runs: dict[str, dict[str, Any]] = {}
 
 SAMPLE_RUN_PATH = Path(__file__).resolve().parent.parent.parent / "sample_run.json"
+DEMO_RUNS_DIR = Path(__file__).resolve().parent.parent.parent / "demo_runs"
 
 
 def store_run(run_data: dict[str, Any]) -> None:
@@ -42,22 +43,41 @@ def store_run(run_data: dict[str, Any]) -> None:
         _completed_runs[run_id] = run_data
 
 
-def _load_sample_run() -> dict[str, Any] | None:
-    """Load sample_run.json if it exists."""
+def _load_demo_runs() -> dict[str, dict[str, Any]]:
+    """Load all demo JSON files from demo_runs/ and sample_run.json."""
+    demos: dict[str, dict[str, Any]] = {}
+    # Load sample_run.json
     if SAMPLE_RUN_PATH.exists():
         with open(SAMPLE_RUN_PATH) as f:
-            return json.load(f)
-    return None
+            data = json.load(f)
+            data.setdefault("label", "sample_run")
+            demos[data.get("run_id", "sample")] = data
+    # Load all files in demo_runs/
+    if DEMO_RUNS_DIR.is_dir():
+        for p in sorted(DEMO_RUNS_DIR.glob("*.json")):
+            with open(p) as f:
+                data = json.load(f)
+                data.setdefault("label", p.stem)
+                demos[data.get("run_id", p.stem)] = data
+    return demos
+
+
+# Pre-load demos at import time so they're always available.
+_demo_runs: dict[str, dict[str, Any]] = _load_demo_runs()
 
 
 def _get_run(run_id: str) -> dict[str, Any]:
-    """Retrieve a run by ID or fall back to sample_run.json."""
+    """Retrieve a run by ID — checks live runs, then demos."""
     if run_id in _completed_runs:
         return _completed_runs[run_id]
-    # Try sample run
-    sample = _load_sample_run()
-    if sample and (run_id == "latest" or sample.get("run_id") == run_id):
-        return sample
+    if run_id in _demo_runs:
+        return _demo_runs[run_id]
+    if run_id == "latest":
+        # Return the most recent live run, or the first demo
+        if _completed_runs:
+            return next(reversed(_completed_runs.values()))
+        if _demo_runs:
+            return next(iter(_demo_runs.values()))
     raise HTTPException(status_code=404, detail=f"Run '{run_id}' not found")
 
 
@@ -134,24 +154,36 @@ async def get_event_detail(run_id: str, turn: int) -> BeliefComparison:
 
 @router.get("/runs")
 async def list_runs() -> list[dict[str, Any]]:
-    """List available runs."""
+    """List available runs (live + demos)."""
+    seen: set[str] = set()
     runs = []
+
+    # Live runs first (most recent)
     for rid, data in _completed_runs.items():
+        seen.add(rid)
         runs.append({
             "run_id": rid,
+            "label": data.get("label", rid[:8]),
+            "grid_size": data.get("grid_size", "8x8"),
             "total_turns": data.get("total_turns", 0),
             "win": data.get("win", False),
             "game_over": data.get("game_over", False),
+            "dm_stale_turns": data.get("dm_stale_turns", 2),
+            "source": "live",
         })
-    # Include sample run if available
-    sample = _load_sample_run()
-    if sample:
-        sid = sample.get("run_id", "sample")
-        if sid not in _completed_runs:
+
+    # Demo runs
+    for rid, data in _demo_runs.items():
+        if rid not in seen:
             runs.append({
-                "run_id": sid,
-                "total_turns": sample.get("total_turns", 0),
-                "win": sample.get("win", False),
-                "game_over": sample.get("game_over", False),
+                "run_id": rid,
+                "label": data.get("label", rid[:8]),
+                "grid_size": data.get("grid_size", "8x8"),
+                "total_turns": data.get("total_turns", 0),
+                "win": data.get("win", False),
+                "game_over": data.get("game_over", False),
+                "dm_stale_turns": data.get("dm_stale_turns", 2),
+                "source": "demo",
             })
+
     return runs

@@ -66,7 +66,18 @@ export async function fetchEventDetail(runId: string, turn: number): Promise<Bel
   return res.json();
 }
 
-export async function fetchRuns(): Promise<Array<{ run_id: string; total_turns: number; win: boolean }>> {
+export interface RunSummary {
+  run_id: string;
+  label: string;
+  grid_size: string;
+  total_turns: number;
+  win: boolean;
+  game_over: boolean;
+  dm_stale_turns: number;
+  source: "live" | "demo";
+}
+
+export async function fetchRuns(): Promise<RunSummary[]> {
   const res = await fetch(`${BASE}/runs`);
   if (!res.ok) throw new Error(`Failed to fetch runs: ${res.status}`);
   return res.json();

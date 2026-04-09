@@ -10,6 +10,7 @@ import { DivergenceTimeline } from "@/components/DivergenceTimeline";
 import { WhyInspector } from "@/components/WhyInspector";
 import { SimulationControls } from "@/components/SimulationControls";
 import { StepViewer } from "@/components/StepViewer";
+import { RunSelector } from "@/components/RunSelector";
 
 type ViewMode = "diagnosis" | "steps";
 
@@ -22,6 +23,7 @@ export default function DashboardPage() {
   const [isRunning, setIsRunning] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("diagnosis");
   const [simStatus, setSimStatus] = useState<SimulationStatus | null>(null);
+  const [currentRunId, setCurrentRunId] = useState<string | null>(null);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Cleanup polling on unmount
@@ -34,8 +36,21 @@ export default function DashboardPage() {
   // Load the sample run on first load
   useEffect(() => {
     fetchDiagnosis("latest")
-      .then(setData)
+      .then((d) => { setData(d); setCurrentRunId(d.run_id); })
       .catch((e) => setError(e.message));
+  }, []);
+
+  const handleSelectRun = useCallback(async (runId: string) => {
+    setError(null);
+    setData(null);
+    setSelectedEvent(null);
+    setCurrentRunId(runId);
+    try {
+      const diagnosis = await fetchDiagnosis(runId);
+      setData(diagnosis);
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : "Failed to load run");
+    }
   }, []);
 
   const stopPolling = useCallback(() => {
@@ -78,6 +93,7 @@ export default function DashboardPage() {
             // Fetch full diagnosis for the completed run
             const diagnosis = await fetchDiagnosis(status.run_id);
             setData(diagnosis);
+            setCurrentRunId(status.run_id);
             setIsRunning(false);
             setViewMode("diagnosis");
           } else if (status.status === "failed") {
@@ -190,6 +206,8 @@ export default function DashboardPage() {
           </p>
         </div>
         <div className="flex items-center gap-3">
+          {/* Run selector */}
+          <RunSelector currentRunId={currentRunId} onSelect={handleSelectRun} />
           {/* View mode toggle */}
           <div className="flex bg-zinc-800 rounded-lg p-0.5">
             <button

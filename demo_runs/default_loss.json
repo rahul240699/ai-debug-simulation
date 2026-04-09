@@ -1,0 +1,1086 @@
+{
+  "run_id": "eef90500b624",
+  "label": "default_loss",
+  "seed": 99,
+  "grid_size": "8x8",
+  "dm_stale_turns": 3,
+  "total_turns": 5,
+  "game_over": true,
+  "win": true,
+  "events": [
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 0,
+      "agent_id": "agent_a",
+      "timestamp": "2026-04-09T22:36:41.964860+00:00",
+      "observed_state": {
+        "agent_position": [
+          5,
+          2
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "wall",
+          "west": "empty"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_b",
+            "position": [
+              5,
+              1
+            ]
+          }
+        ],
+        "turn_number": 0,
+        "has_key": false,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {},
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": null,
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": -1
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          5,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 0
+      },
+      "rationale": "",
+      "chosen_action": "move",
+      "action_args": {
+        "direction": "north"
+      },
+      "action_result": {
+        "success": true,
+        "action": "move_north",
+        "new_position": [
+          4,
+          2
+        ],
+        "message": "Moved north to (4,2).",
+        "game_over": false,
+        "win": false
+      },
+      "discrepancy_detected": false,
+      "discrepancy_details": null,
+      "belief_diff": null,
+      "message_correlation_ids": [],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 0,
+      "agent_id": "agent_b",
+      "timestamp": "2026-04-09T22:36:42.620719+00:00",
+      "observed_state": {
+        "agent_position": [
+          5,
+          1
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "empty",
+          "west": "wall"
+        },
+        "visible_entities": [],
+        "turn_number": 0,
+        "has_key": false,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {},
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": null,
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": -1
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": null,
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 0
+      },
+      "rationale": "",
+      "chosen_action": "move",
+      "action_args": {
+        "direction": "north"
+      },
+      "action_result": {
+        "success": true,
+        "action": "move_north",
+        "new_position": [
+          4,
+          1
+        ],
+        "message": "Moved north to (4,1).",
+        "game_over": false,
+        "win": false
+      },
+      "discrepancy_detected": false,
+      "discrepancy_details": null,
+      "belief_diff": null,
+      "message_correlation_ids": [],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 1,
+      "agent_id": "agent_a",
+      "timestamp": "2026-04-09T22:36:43.651794+00:00",
+      "observed_state": {
+        "agent_position": [
+          4,
+          2
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "empty",
+          "west": "empty"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_b",
+            "position": [
+              4,
+              1
+            ]
+          }
+        ],
+        "turn_number": 1,
+        "has_key": false,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          5,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 0
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty",
+          "3,2": "empty",
+          "4,3": "empty",
+          "4,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          4,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 1
+      },
+      "rationale": "",
+      "chosen_action": "send_message",
+      "action_args": {
+        "text": "I'm at (4,2) and I don't have the key. What is your location?"
+      },
+      "action_result": {
+        "success": true,
+        "action": "send_message",
+        "new_position": [
+          4,
+          2
+        ],
+        "message": "Message sent (will be delivered next turn): \"I'm at (4,2) and I don't have the key. What is your location\"",
+        "game_over": false,
+        "win": false,
+        "correlation_ids": [
+          "ad61abbd"
+        ]
+      },
+      "discrepancy_detected": true,
+      "discrepancy_details": "Partner expected at (5,1) but seen at (4,1)",
+      "belief_diff": [
+        {
+          "op": "replace",
+          "path": "/partner_location",
+          "from": [
+            5,
+            1
+          ],
+          "to": [
+            4,
+            1
+          ]
+        }
+      ],
+      "message_correlation_ids": [
+        "ad61abbd"
+      ],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 1,
+      "agent_id": "agent_b",
+      "timestamp": "2026-04-09T22:36:44.307047+00:00",
+      "observed_state": {
+        "agent_position": [
+          4,
+          1
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "key",
+          "south": "empty",
+          "east": "empty",
+          "west": "wall"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_a",
+            "position": [
+              4,
+              2
+            ]
+          }
+        ],
+        "turn_number": 1,
+        "has_key": false,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": null,
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 0
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall",
+          "3,1": "key",
+          "4,2": "empty",
+          "4,0": "wall"
+        },
+        "key_location": [
+          3,
+          1
+        ],
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          4,
+          2
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 1
+      },
+      "rationale": "",
+      "chosen_action": "move",
+      "action_args": {
+        "direction": "north"
+      },
+      "action_result": {
+        "success": true,
+        "action": "move_north",
+        "new_position": [
+          3,
+          1
+        ],
+        "message": "Moved north to (3,1).",
+        "game_over": false,
+        "win": false
+      },
+      "discrepancy_detected": false,
+      "discrepancy_details": null,
+      "belief_diff": null,
+      "message_correlation_ids": [],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 2,
+      "agent_id": "agent_a",
+      "timestamp": "2026-04-09T22:36:45.295199+00:00",
+      "observed_state": {
+        "agent_position": [
+          4,
+          2
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "empty",
+          "west": "empty"
+        },
+        "visible_entities": [],
+        "turn_number": 2,
+        "has_key": false,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty",
+          "3,2": "empty",
+          "4,3": "empty",
+          "4,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          4,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 1
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty",
+          "3,2": "empty",
+          "4,3": "empty",
+          "4,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          4,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 2
+      },
+      "rationale": "",
+      "chosen_action": "move",
+      "action_args": {
+        "direction": "north"
+      },
+      "action_result": {
+        "success": true,
+        "action": "move_north",
+        "new_position": [
+          3,
+          2
+        ],
+        "message": "Moved north to (3,2).",
+        "game_over": false,
+        "win": false
+      },
+      "discrepancy_detected": false,
+      "discrepancy_details": null,
+      "belief_diff": null,
+      "message_correlation_ids": [],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 2,
+      "agent_id": "agent_b",
+      "timestamp": "2026-04-09T22:36:45.866212+00:00",
+      "observed_state": {
+        "agent_position": [
+          3,
+          1
+        ],
+        "current_cell": "key",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "empty",
+          "west": "wall"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_a",
+            "position": [
+              3,
+              2
+            ]
+          }
+        ],
+        "turn_number": 2,
+        "has_key": false,
+        "messages_received": [
+          {
+            "from": "agent_a",
+            "text": "I'm at (4,2) and I don't have the key. What is your location?",
+            "sent_turn": 1,
+            "correlation_id": "ad61abbd"
+          }
+        ]
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall",
+          "3,1": "key",
+          "4,2": "empty",
+          "4,0": "wall"
+        },
+        "key_location": [
+          3,
+          1
+        ],
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          4,
+          2
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 1
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall",
+          "3,1": "key",
+          "4,2": "empty",
+          "4,0": "wall",
+          "2,1": "empty",
+          "3,2": "empty",
+          "3,0": "wall"
+        },
+        "key_location": [
+          3,
+          1
+        ],
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          3,
+          2
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 2
+      },
+      "rationale": "",
+      "chosen_action": "pick_up_item",
+      "action_args": {},
+      "action_result": {
+        "success": true,
+        "action": "pick_up_item",
+        "new_position": [
+          3,
+          1
+        ],
+        "message": "Picked up the key!",
+        "game_over": false,
+        "win": false
+      },
+      "discrepancy_detected": true,
+      "discrepancy_details": "Partner expected at (4,2) but seen at (3,2)",
+      "belief_diff": [
+        {
+          "op": "replace",
+          "path": "/partner_location",
+          "from": [
+            4,
+            2
+          ],
+          "to": [
+            3,
+            2
+          ]
+        }
+      ],
+      "message_correlation_ids": [
+        "ad61abbd"
+      ],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 3,
+      "agent_id": "agent_a",
+      "timestamp": "2026-04-09T22:36:46.825337+00:00",
+      "observed_state": {
+        "agent_position": [
+          3,
+          2
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "exit",
+          "west": "empty"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_b",
+            "position": [
+              3,
+              1
+            ]
+          }
+        ],
+        "turn_number": 3,
+        "has_key": false,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty",
+          "3,2": "empty",
+          "4,3": "empty",
+          "4,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          4,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 2
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty",
+          "3,2": "empty",
+          "4,3": "empty",
+          "4,1": "empty",
+          "2,2": "empty",
+          "3,3": "exit",
+          "3,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": [
+          3,
+          3
+        ],
+        "door_location": null,
+        "partner_location": [
+          3,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 3
+      },
+      "rationale": "",
+      "chosen_action": "send_message",
+      "action_args": {
+        "text": "I am at (3,2) and I see the exit to the east. Do you have the key?"
+      },
+      "action_result": {
+        "success": true,
+        "action": "send_message",
+        "new_position": [
+          3,
+          2
+        ],
+        "message": "Message sent (will be delivered next turn): \"I am at (3,2) and I see the exit to the east. Do you have th\"",
+        "game_over": false,
+        "win": false,
+        "correlation_ids": [
+          "e9a5dc10"
+        ]
+      },
+      "discrepancy_detected": true,
+      "discrepancy_details": "Partner expected at (4,1) but seen at (3,1)",
+      "belief_diff": [
+        {
+          "op": "replace",
+          "path": "/partner_location",
+          "from": [
+            4,
+            1
+          ],
+          "to": [
+            3,
+            1
+          ]
+        }
+      ],
+      "message_correlation_ids": [
+        "e9a5dc10"
+      ],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 3,
+      "agent_id": "agent_b",
+      "timestamp": "2026-04-09T22:36:47.507444+00:00",
+      "observed_state": {
+        "agent_position": [
+          3,
+          1
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "empty",
+          "west": "wall"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_a",
+            "position": [
+              3,
+              2
+            ]
+          }
+        ],
+        "turn_number": 3,
+        "has_key": true,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall",
+          "3,1": "key",
+          "4,2": "empty",
+          "4,0": "wall",
+          "2,1": "empty",
+          "3,2": "empty",
+          "3,0": "wall"
+        },
+        "key_location": [
+          3,
+          1
+        ],
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          3,
+          2
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 2
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall",
+          "3,1": "empty",
+          "4,2": "empty",
+          "4,0": "wall",
+          "2,1": "empty",
+          "3,2": "empty",
+          "3,0": "wall"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          3,
+          2
+        ],
+        "has_key": true,
+        "partner_has_key": false,
+        "last_updated_turn": 3
+      },
+      "rationale": "",
+      "chosen_action": "move",
+      "action_args": {
+        "direction": "east"
+      },
+      "action_result": {
+        "success": true,
+        "action": "move_east",
+        "new_position": [
+          3,
+          2
+        ],
+        "message": "Moved east to (3,2).",
+        "game_over": false,
+        "win": false
+      },
+      "discrepancy_detected": true,
+      "discrepancy_details": "Key expected at (3,1) but cell is 'empty'",
+      "belief_diff": [
+        {
+          "op": "replace",
+          "path": "/key_location",
+          "from": [
+            3,
+            1
+          ],
+          "to": null
+        }
+      ],
+      "message_correlation_ids": [],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 4,
+      "agent_id": "agent_a",
+      "timestamp": "2026-04-09T22:36:48.666611+00:00",
+      "observed_state": {
+        "agent_position": [
+          3,
+          2
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "exit",
+          "west": "empty"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_b",
+            "position": [
+              3,
+              2
+            ]
+          }
+        ],
+        "turn_number": 4,
+        "has_key": false,
+        "messages_received": []
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty",
+          "3,2": "empty",
+          "4,3": "empty",
+          "4,1": "empty",
+          "2,2": "empty",
+          "3,3": "exit",
+          "3,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": [
+          3,
+          3
+        ],
+        "door_location": null,
+        "partner_location": [
+          3,
+          1
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 3
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,2": "empty",
+          "4,2": "empty",
+          "6,2": "empty",
+          "5,3": "wall",
+          "5,1": "empty",
+          "3,2": "empty",
+          "4,3": "empty",
+          "4,1": "empty",
+          "2,2": "empty",
+          "3,3": "exit",
+          "3,1": "empty"
+        },
+        "key_location": null,
+        "exit_location": [
+          3,
+          3
+        ],
+        "door_location": null,
+        "partner_location": [
+          3,
+          2
+        ],
+        "has_key": false,
+        "partner_has_key": false,
+        "last_updated_turn": 4
+      },
+      "rationale": "",
+      "chosen_action": "send_message",
+      "action_args": {
+        "text": "I am at (3,2) and I see the exit to the east. Do you have the key?"
+      },
+      "action_result": {
+        "success": true,
+        "action": "send_message",
+        "new_position": [
+          3,
+          2
+        ],
+        "message": "Message sent (will be delivered next turn): \"I am at (3,2) and I see the exit to the east. Do you have th\"",
+        "game_over": false,
+        "win": false,
+        "correlation_ids": [
+          "cfc2f435"
+        ]
+      },
+      "discrepancy_detected": true,
+      "discrepancy_details": "Partner expected at (3,1) but seen at (3,2)",
+      "belief_diff": [
+        {
+          "op": "replace",
+          "path": "/partner_location",
+          "from": [
+            3,
+            1
+          ],
+          "to": [
+            3,
+            2
+          ]
+        }
+      ],
+      "message_correlation_ids": [
+        "cfc2f435"
+      ],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    },
+    {
+      "run_id": "eef90500b624",
+      "turn_number": 4,
+      "agent_id": "agent_b",
+      "timestamp": "2026-04-09T22:36:49.589183+00:00",
+      "observed_state": {
+        "agent_position": [
+          3,
+          2
+        ],
+        "current_cell": "empty",
+        "adjacent_cells": {
+          "north": "empty",
+          "south": "empty",
+          "east": "exit",
+          "west": "empty"
+        },
+        "visible_entities": [
+          {
+            "type": "agent",
+            "id": "agent_a",
+            "position": [
+              3,
+              2
+            ]
+          }
+        ],
+        "turn_number": 4,
+        "has_key": true,
+        "messages_received": [
+          {
+            "from": "agent_a",
+            "text": "I am at (3,2) and I see the exit to the east. Do you have the key?",
+            "sent_turn": 3,
+            "correlation_id": "e9a5dc10"
+          }
+        ]
+      },
+      "belief_before": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall",
+          "3,1": "empty",
+          "4,2": "empty",
+          "4,0": "wall",
+          "2,1": "empty",
+          "3,2": "empty",
+          "3,0": "wall"
+        },
+        "key_location": null,
+        "exit_location": null,
+        "door_location": null,
+        "partner_location": [
+          3,
+          2
+        ],
+        "has_key": true,
+        "partner_has_key": false,
+        "last_updated_turn": 3
+      },
+      "belief_after": {
+        "grid_knowledge": {
+          "5,1": "empty",
+          "4,1": "empty",
+          "6,1": "empty",
+          "5,2": "empty",
+          "5,0": "wall",
+          "3,1": "empty",
+          "4,2": "empty",
+          "4,0": "wall",
+          "2,1": "empty",
+          "3,2": "empty",
+          "3,0": "wall",
+          "2,2": "empty",
+          "3,3": "exit"
+        },
+        "key_location": null,
+        "exit_location": [
+          3,
+          3
+        ],
+        "door_location": null,
+        "partner_location": [
+          3,
+          2
+        ],
+        "has_key": true,
+        "partner_has_key": false,
+        "last_updated_turn": 4
+      },
+      "rationale": "",
+      "chosen_action": "move",
+      "action_args": {
+        "direction": "east"
+      },
+      "action_result": {
+        "success": true,
+        "action": "move_east",
+        "new_position": [
+          3,
+          3
+        ],
+        "message": "Moved east to (3,3).",
+        "game_over": true,
+        "win": true
+      },
+      "discrepancy_detected": false,
+      "discrepancy_details": null,
+      "belief_diff": null,
+      "message_correlation_ids": [
+        "e9a5dc10"
+      ],
+      "dm_query": null,
+      "dm_advice": null,
+      "dm_stale_turns_count": null
+    }
+  ],
+  "final_grid": "# # # # # # # #\n# # . . . . . #\n# . . . # . D #\n# . Aa Ab . . . #\n# . . . . . . #\n# . . # . . . #\n# . . # . . . #\n# # # # # # # #"
+}
