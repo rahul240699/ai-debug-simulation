@@ -55,9 +55,7 @@ def main() -> None:
     print(render_grid(dungeon))
     print()
 
-    # Override max turns in config so the graph respects the CLI flag.
-    import src.config as cfg
-    cfg.MAX_TURNS = args.turns
+    dungeon.max_turns = args.turns
 
     # 2. Build and run the LangGraph state machine.
     graph = build_graph()

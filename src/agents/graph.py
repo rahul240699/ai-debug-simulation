@@ -14,7 +14,7 @@ from langgraph.graph import END, StateGraph
 from src.agents.prompts import SYSTEM_PROMPT, build_turn_message
 from src.agents.state import GraphState
 from src.agents.tools import TOOL_SCHEMAS, parse_tool_call
-from src.config import OPENAI_API_KEY, OPENAI_MODEL, OPENAI_TEMPERATURE, MAX_TURNS
+from src.config import OPENAI_API_KEY, OPENAI_MODEL, OPENAI_TEMPERATURE
 from src.simulation.dungeon_master import (
     advance_turn,
     check_win,
@@ -176,10 +176,10 @@ def should_continue(state: GraphState) -> Literal["observe", "__end__"]:
         print(f"GAME OVER — {'WIN' if dungeon.win else 'LOSS'} after {dungeon.turn_number} turns")
         print(f"{'='*40}\n")
         return "__end__"
-    if dungeon.turn_number >= MAX_TURNS:
+    if dungeon.turn_number >= dungeon.max_turns:
         dungeon.game_over = True
         print(f"\n{'='*40}")
-        print(f"GAME OVER — Max turns ({MAX_TURNS}) reached. LOSS.")
+        print(f"GAME OVER — Max turns ({dungeon.max_turns}) reached. LOSS.")
         print(f"{'='*40}\n")
         return "__end__"
     return "observe"

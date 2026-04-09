@@ -61,14 +61,8 @@ async def start_simulation(
         "messages": [],
     }
 
-    import src.config as cfg
-    original_max = cfg.MAX_TURNS
-    cfg.MAX_TURNS = max_turns
-
-    try:
-        graph.invoke(initial_state)
-    finally:
-        cfg.MAX_TURNS = original_max
+    dungeon.max_turns = max_turns
+    graph.invoke(initial_state)
 
     return {
         "run_id": dungeon.run_id,
