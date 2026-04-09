@@ -11,10 +11,14 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage, Tool
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, StateGraph
 
+from src.agents.belief import BeliefModel, update_belief
 from src.agents.prompts import SYSTEM_PROMPT, build_turn_message
 from src.agents.state import GraphState
 from src.agents.tools import TOOL_SCHEMAS, parse_tool_call
 from src.config import OPENAI_API_KEY, OPENAI_MODEL, OPENAI_TEMPERATURE
+from src.instrumentation.discrepancy import detect_discrepancies
+from src.instrumentation.event_schema import EventRecord
+from src.instrumentation.trace_builder import record_turn_span, start_trace, end_trace
 from src.simulation.dungeon_master import (
     advance_turn,
     check_win,
@@ -28,6 +32,18 @@ logger = logging.getLogger(__name__)
 # ── LLM setup ────────────────────────────────────────────────────────────────
 
 _llm: ChatOpenAI | None = None
+
+# Per-agent belief models, keyed by run_id:agent_id.
+_beliefs: dict[str, BeliefModel] = {}
+
+
+def _belief_key(run_id: str, agent_id: str) -> str:
+    return f"{run_id}:{agent_id}"
+
+
+def reset_beliefs() -> None:
+    """Clear all cached belief models (useful between test runs)."""
+    _beliefs.clear()
 
 
 def _get_llm() -> ChatOpenAI:
@@ -51,6 +67,20 @@ def observe_node(state: GraphState) -> dict[str, Any]:
 
     obs = get_observation(dungeon, agent_id)
 
+    # ── Belief tracking ──────────────────────────────────────────────────
+    bkey = _belief_key(dungeon.run_id, agent_id)
+    belief = _beliefs.setdefault(bkey, BeliefModel())
+    belief_before = belief.snapshot()
+    update_belief(belief, obs)
+    belief_after = belief.snapshot()
+
+    # Collect correlation IDs from received messages.
+    msg_correlation_ids = [
+        m["correlation_id"]
+        for m in obs.get("messages_received", [])
+        if "correlation_id" in m
+    ]
+
     logger.info(
         "Turn %d | %s observes from (%d,%d)",
         dungeon.turn_number,
@@ -62,6 +92,9 @@ def observe_node(state: GraphState) -> dict[str, Any]:
     return {
         "current_agent_id": agent_id,
         "observation": obs,
+        "belief_before": belief_before,
+        "belief_after": belief_after,
+        "message_correlation_ids": msg_correlation_ids,
     }
 
 
@@ -129,24 +162,52 @@ def act_node(state: GraphState) -> dict[str, Any]:
 
 
 def record_node(state: GraphState) -> dict[str, Any]:
-    """Build an event record for this turn (instrumentation hook point)."""
+    """Build an EventRecord for this turn, detect discrepancies, emit Langfuse span."""
     dungeon = state["dungeon"]
     agent_id = state["current_agent_id"]
 
-    event: dict[str, Any] = {
-        "run_id": dungeon.run_id,
-        "turn_number": dungeon.turn_number,
-        "agent_id": agent_id,
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "observation": state["observation"],
-        "action": state["action_name"],
-        "action_args": state["action_args"],
-        "action_result": state["action_result"],
-        # Placeholders for Phase 3 instrumentation.
-        "discrepancy_detected": False,
-        "discrepancy_details": None,
-    }
-    dungeon.event_log.append(event)
+    belief_before = state.get("belief_before", {})
+    belief_after = state.get("belief_after", {})
+    action_result = state["action_result"]
+
+    # ── Discrepancy detection ────────────────────────────────────────────
+    detected, details, diff = detect_discrepancies(
+        belief_before, state["observation"], action_result,
+    )
+
+    if detected:
+        logger.warning(
+            "Turn %d | %s | DISCREPANCY: %s",
+            dungeon.turn_number, agent_id, details,
+        )
+
+    # Collect correlation IDs from action result (send_message)
+    msg_corr = state.get("message_correlation_ids", [])
+    msg_corr += action_result.get("correlation_ids", [])
+
+    # ── Build EventRecord ────────────────────────────────────────────────
+    event = EventRecord(
+        run_id=dungeon.run_id,
+        turn_number=dungeon.turn_number,
+        agent_id=agent_id,
+        timestamp=datetime.now(timezone.utc).isoformat(),
+        observed_state=state["observation"],
+        belief_before=belief_before,
+        belief_after=belief_after,
+        rationale="",  # could extract from LLM response if desired
+        chosen_action=state["action_name"],
+        action_args=state["action_args"],
+        action_result=action_result,
+        discrepancy_detected=detected,
+        discrepancy_details=details,
+        belief_diff=diff,
+        message_correlation_ids=msg_corr,
+    )
+
+    dungeon.event_log.append(event.to_dict())
+
+    # ── Langfuse span ────────────────────────────────────────────────────
+    record_turn_span(dungeon.run_id, event)
 
     return {}
 

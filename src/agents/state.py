@@ -25,5 +25,10 @@ class GraphState(TypedDict):
     action_args: dict[str, Any]
     action_result: dict[str, Any]
 
+    # Belief snapshots for discrepancy detection.
+    belief_before: dict[str, Any]
+    belief_after: dict[str, Any]
+    message_correlation_ids: list[str]
+
     # LangGraph message history — accumulates across turns.
     messages: Annotated[list, add_messages]

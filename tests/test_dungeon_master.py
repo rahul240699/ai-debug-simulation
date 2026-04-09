@@ -88,17 +88,19 @@ class TestActions:
         assert result["success"] is True
         assert state.agents["agent_a"].position == (2, 1)
 
-    def test_move_into_wall_fails(self):
+    def test_move_into_wall_soft_failure(self):
         state = _make_simple_dungeon()
         result = execute_action(state, "agent_a", "move", {"direction": "west"})
-        assert result["success"] is False
+        assert result["success"] is True
+        assert "no movement" in result["message"].lower()
         assert state.agents["agent_a"].position == (1, 1)  # didn't move
 
-    def test_move_into_locked_door_fails(self):
+    def test_move_into_locked_door_soft_failure(self):
         state = _make_simple_dungeon()
         state.agents["agent_a"].position = (2, 2)
         result = execute_action(state, "agent_a", "move", {"direction": "south"})
-        assert result["success"] is False
+        assert result["success"] is True
+        assert "no movement" in result["message"].lower()
         assert "locked" in result["message"].lower()
 
     def test_pick_up_key(self):

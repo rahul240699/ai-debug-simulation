@@ -9,7 +9,8 @@ import sys
 from src.config import GRID_HEIGHT, GRID_WIDTH, MAX_TURNS, WALL_DENSITY
 from src.simulation.grid import create_grid
 from src.simulation.dungeon_master import render_grid
-from src.agents.graph import build_graph
+from src.agents.graph import build_graph, reset_beliefs
+from src.instrumentation.trace_builder import start_trace, end_trace
 
 
 def main() -> None:
@@ -57,7 +58,14 @@ def main() -> None:
 
     dungeon.max_turns = args.turns
 
-    # 2. Build and run the LangGraph state machine.
+    # 2. Start Langfuse trace and build graph.
+    reset_beliefs()
+    start_trace(dungeon.run_id, metadata={
+        "grid": f"{dungeon.grid_width}x{dungeon.grid_height}",
+        "max_turns": args.turns,
+        "seed": args.seed,
+    })
+
     graph = build_graph()
 
     initial_state = {
@@ -67,6 +75,9 @@ def main() -> None:
         "action_name": "",
         "action_args": {},
         "action_result": {},
+        "belief_before": {},
+        "belief_after": {},
+        "message_correlation_ids": [],
         "messages": [],
     }
 
@@ -74,6 +85,8 @@ def main() -> None:
         result = graph.invoke(initial_state)
     except KeyboardInterrupt:
         print("\n\nSimulation interrupted by user.")
+    finally:
+        end_trace(dungeon.run_id)
 
     # 3. Summary.
     print(f"\nFinal state after {dungeon.turn_number} turns:")

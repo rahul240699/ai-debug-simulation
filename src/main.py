@@ -18,7 +18,8 @@ from src.simulation.dungeon_master import (
     get_observation,
     render_grid,
 )
-from src.agents.graph import build_graph
+from src.agents.graph import build_graph, reset_beliefs
+from src.instrumentation.trace_builder import start_trace, end_trace
 
 logger = logging.getLogger(__name__)
 
@@ -58,11 +59,22 @@ async def start_simulation(
         "action_name": "",
         "action_args": {},
         "action_result": {},
+        "belief_before": {},
+        "belief_after": {},
+        "message_correlation_ids": [],
         "messages": [],
     }
 
     dungeon.max_turns = max_turns
-    graph.invoke(initial_state)
+    reset_beliefs()
+    start_trace(dungeon.run_id, metadata={
+        "grid": f"{dungeon.grid_width}x{dungeon.grid_height}",
+        "max_turns": max_turns,
+    })
+    try:
+        graph.invoke(initial_state)
+    finally:
+        end_trace(dungeon.run_id)
 
     return {
         "run_id": dungeon.run_id,

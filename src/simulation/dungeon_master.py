@@ -118,6 +118,7 @@ def advance_turn(state: DungeonState) -> None:
                     "from": msg.from_agent,
                     "text": msg.text,
                     "sent_turn": msg.sent_turn,
+                    "correlation_id": msg.correlation_id,
                 })
         else:
             still_pending.append(msg)
@@ -153,9 +154,9 @@ def _do_move(
 
     cell = state.grid[r][c]
     if cell == CellType.WALL:
-        return _result(False, f"move_{direction}", agent.position, "Blocked by a wall.")
+        return _result(True, f"move_{direction}", agent.position, "No Movement — blocked by a wall.")
     if cell == CellType.LOCKED_DOOR:
-        return _result(False, f"move_{direction}", agent.position, "The door is locked.")
+        return _result(True, f"move_{direction}", agent.position, "No Movement — the door is locked.")
 
     agent.position = (r, c)
     return _result(True, f"move_{direction}", agent.position, f"Moved {direction} to ({r},{c}).")
@@ -209,20 +210,23 @@ def _do_send_message(
     if not others:
         return _result(False, "send_message", agent.position, "No other agent to send to.")
 
+    correlation_ids = []
     for recipient_id in others:
-        state.pending_messages.append(
-            PendingMessage(
-                from_agent=agent.agent_id,
-                to_agent=recipient_id,
-                text=text.strip(),
-                sent_turn=state.turn_number,
-            )
+        msg = PendingMessage(
+            from_agent=agent.agent_id,
+            to_agent=recipient_id,
+            text=text.strip(),
+            sent_turn=state.turn_number,
         )
+        state.pending_messages.append(msg)
+        correlation_ids.append(msg.correlation_id)
 
-    return _result(
+    result = _result(
         True, "send_message", agent.position,
         f"Message sent (will be delivered next turn): \"{text.strip()[:60]}\"",
     )
+    result["correlation_ids"] = correlation_ids
+    return result
 
 
 def _result(

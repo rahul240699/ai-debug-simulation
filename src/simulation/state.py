@@ -36,6 +36,7 @@ class PendingMessage:
     to_agent: str
     text: str
     sent_turn: int
+    correlation_id: str = field(default_factory=lambda: uuid.uuid4().hex[:8])
 
 
 # ── World state ──────────────────────────────────────────────────────────────

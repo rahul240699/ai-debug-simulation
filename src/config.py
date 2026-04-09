@@ -21,6 +21,12 @@ GRID_HEIGHT: int = int(os.getenv("GRID_HEIGHT", "8"))
 MAX_TURNS: int = int(os.getenv("MAX_TURNS", "100"))
 WALL_DENSITY: float = float(os.getenv("WALL_DENSITY", "0.15"))
 
+# ── Langfuse ──────────────────────────────────────────────────────────────────
+LANGFUSE_PUBLIC_KEY: str = os.getenv("LANGFUSE_PUBLIC_KEY", "")
+LANGFUSE_SECRET_KEY: str = os.getenv("LANGFUSE_SECRET_KEY", "")
+LANGFUSE_HOST: str = os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
+LANGFUSE_ENABLED: bool = bool(LANGFUSE_PUBLIC_KEY and LANGFUSE_SECRET_KEY)
+
 # ── App ──────────────────────────────────────────────────────────────────────
 APP_ENV: str = os.getenv("APP_ENV", "development")
 LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
