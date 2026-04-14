@@ -1,4 +1,6 @@
-/** Divergence Timeline — vertical timeline showing only critical events. */
+/** Divergence Timeline — vertical timeline showing only critical events.
+ *  Supports category filtering from clickable RCA badges.
+ */
 
 import type { CriticalEvent } from "@/lib/types";
 
@@ -6,6 +8,7 @@ interface Props {
   timeline: CriticalEvent[];
   selectedEvent: CriticalEvent | null;
   onSelectEvent: (event: CriticalEvent) => void;
+  categoryFilter?: string | null;
 }
 
 const SEVERITY_STYLES: Record<string, { dot: string; border: string; bg: string }> = {
@@ -20,9 +23,9 @@ const SEVERITY_STYLES: Record<string, { dot: string; border: string; bg: string 
     bg: "bg-amber-500/5",
   },
   red: {
-    dot: "bg-red-400",
-    border: "border-red-500/20 hover:border-red-500/40",
-    bg: "bg-red-500/5",
+    dot: "bg-rose-400",
+    border: "border-rose-500/20 hover:border-rose-500/40",
+    bg: "bg-rose-500/5",
   },
 };
 
@@ -40,17 +43,44 @@ const TYPE_ICONS: Record<string, string> = {
   coordination: "💬",
 };
 
-export function DivergenceTimeline({ timeline, selectedEvent, onSelectEvent }: Props) {
+// Map category filter to matching event types
+const FILTER_MAP: Record<string, (evt: CriticalEvent) => boolean> = {
+  stale_info: (evt) =>
+    evt.event_type === "critical_divergence" &&
+    (evt.headline.toLowerCase().includes("wall") ||
+     evt.headline.toLowerCase().includes("stale") ||
+     evt.headline.toLowerCase().includes("hidden")),
+  dm_oracle: (evt) => evt.event_type === "dm_oracle",
+  coordination: (evt) =>
+    evt.event_type === "coordination" ||
+    (evt.event_type === "critical_divergence" &&
+     evt.headline.toLowerCase().includes("partner")),
+  tool_failure: (evt) =>
+    evt.event_type === "critical_divergence" &&
+    (evt.headline.toLowerCase().includes("failed") ||
+     evt.headline.toLowerCase().includes("failure")),
+};
+
+export function DivergenceTimeline({ timeline, selectedEvent, onSelectEvent, categoryFilter }: Props) {
+  const filteredTimeline = categoryFilter && FILTER_MAP[categoryFilter]
+    ? timeline.filter(FILTER_MAP[categoryFilter])
+    : timeline;
+
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-lg">
-      <div className="px-4 py-3 border-b border-zinc-800">
+    <div className="bg-slate-800/50 border border-slate-700/50 rounded-lg">
+      <div className="px-4 py-3 border-b border-slate-700/50">
         <h3 className="text-sm font-semibold text-zinc-300">Divergence Timeline</h3>
         <p className="text-xs text-zinc-500 mt-0.5">
-          {timeline.length} critical events · Click to inspect
+          {filteredTimeline.length}{categoryFilter ? ` of ${timeline.length}` : ""} critical events · Click to inspect
+          {categoryFilter && (
+            <span className="ml-1 text-amber-400">
+              (filtered)
+            </span>
+          )}
         </p>
       </div>
       <div className="max-h-[600px] overflow-y-auto">
-        {timeline.map((evt, i) => {
+        {filteredTimeline.map((evt, i) => {
           const styles = SEVERITY_STYLES[evt.severity] ?? SEVERITY_STYLES.yellow;
           const isSelected =
             selectedEvent?.turn_number === evt.turn_number &&
@@ -60,16 +90,16 @@ export function DivergenceTimeline({ timeline, selectedEvent, onSelectEvent }: P
             <button
               key={`${evt.turn_number}-${evt.agent_id}-${i}`}
               onClick={() => onSelectEvent(evt)}
-              className={`w-full text-left px-4 py-3 border-b border-zinc-800/50 transition-colors cursor-pointer ${
-                isSelected ? `${styles.bg} border-l-2 ${styles.border}` : "hover:bg-zinc-800/50"
+              className={`w-full text-left px-4 py-3 border-b border-slate-700/30 transition-all duration-200 cursor-pointer ${
+                isSelected ? `${styles.bg} border-l-2 ${styles.border}` : "hover:bg-slate-700/30"
               }`}
             >
               <div className="flex items-start gap-3">
                 {/* Timeline dot */}
                 <div className="flex flex-col items-center pt-1">
-                  <div className={`w-2.5 h-2.5 rounded-full ${styles.dot}`} />
-                  {i < timeline.length - 1 && (
-                    <div className="w-px h-full bg-zinc-800 mt-1" />
+                  <div className={`w-2.5 h-2.5 rounded-full ${styles.dot} transition-transform duration-200`} />
+                  {i < filteredTimeline.length - 1 && (
+                    <div className="w-px h-full bg-slate-700/50 mt-1" />
                   )}
                 </div>
 
@@ -106,9 +136,9 @@ export function DivergenceTimeline({ timeline, selectedEvent, onSelectEvent }: P
           );
         })}
 
-        {timeline.length === 0 && (
+        {filteredTimeline.length === 0 && (
           <div className="p-8 text-center text-zinc-500 text-sm">
-            No critical events detected
+            {categoryFilter ? "No events match the selected filter" : "No critical events detected"}
           </div>
         )}
       </div>

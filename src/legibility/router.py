@@ -22,6 +22,7 @@ from src.legibility.diagnosis import (
     compute_metrics,
     extract_critical_events,
 )
+from src.legibility.recommendations import generate_recommendations
 from src.legibility.schemas import BeliefComparison, RunDiagnosis
 
 logger = logging.getLogger(__name__)
@@ -150,6 +151,33 @@ async def get_event_detail(run_id: str, turn: int) -> BeliefComparison:
         discrepancy_details=e.get("discrepancy_details"),
         belief_diff=e.get("belief_diff"),
     )
+
+
+_recommendations_cache: dict[str, list[dict[str, str]]] = {}
+
+
+@router.get("/recommendations")
+async def get_recommendations(run_id: str = "latest") -> list[dict[str, str]]:
+    """Generate prescriptive optimisation recommendations for a run (cached)."""
+    if run_id in _recommendations_cache:
+        return _recommendations_cache[run_id]
+
+    run = _get_run(run_id)
+    events = run.get("events", [])
+    win = run.get("win", False)
+    metrics = compute_metrics(events)
+    summary = build_diagnosis(events, win)
+
+    recs = generate_recommendations(
+        metrics=metrics.model_dump(),
+        failure_categories=[fc.model_dump() for fc in summary.failure_categories],
+        events=events,
+        win=win,
+        total_turns=run.get("total_turns", 0),
+        dm_stale_turns=run.get("dm_stale_turns", 2),
+    )
+    _recommendations_cache[run_id] = recs
+    return recs
 
 
 @router.get("/runs")
