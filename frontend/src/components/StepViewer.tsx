@@ -297,9 +297,10 @@ function CellBadge({ cell }: { cell: string }) {
     locked_door: "bg-rose-500/20 text-rose-400",
     exit: "bg-emerald-500/20 text-emerald-400",
   };
+  const labels: Record<string, string> = { locked_door: "door 🔒" };
   return (
     <span className={`text-xs px-1.5 py-0.5 rounded ${colors[cell] ?? "bg-zinc-800 text-zinc-400"}`}>
-      {cell}
+      {labels[cell] ?? cell}
     </span>
   );
 }
