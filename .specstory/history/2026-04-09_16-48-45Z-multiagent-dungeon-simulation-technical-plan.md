@@ -591,3 +591,125 @@ Great now update the README with instructions to setup Langfuse and open AI keys
 _**Agent (copilot/claude-opus-4.6)**_
 
 The user wants me to update the README with setup instructions. Let me first check what currently exists in the README and understand the project structure for dependencies.
+
+---
+
+_**User (2026-04-14 01:15:46Z)**_
+
+Okay, so we need to beef up the Diagnosis Dashboard UI a bit.
+
+We'll add a new feature: System Optimization Recommendations
+
+Implement a section titled "Prescriptive Insights" or "What should change next?".
+The Logic: Use a mini-LLM to judge call to analyze the run's root cause analysis.
+The Output:
+Generate: 3-4 bullet points based on the data. For e.g.
+If Discrepancy Count is high: "Prompt Engineering: Increase agent 'skepticism' of stale DM data. The agents are currently over-relying on the Oracle."
+If Coordination Efficiency is low: Architecture: Reduce message latency from 1 turn to 0.5 or mplement a shared global blackboard for prirority items like key.
+If infromtion lag is high: Tooling implement a ping tool for agents to verify partner location more frequently.
+
+Additional UI enhancements:
+1. Grid Visualization: In the "Why Inspector," implement a mini grid visualizer (8x8 or the specified size).
+Highlight the current agent position and partner location.
+Highlight the discrepancy point: Mark the target cell with a red 'X' and tooltip.
+2. Belief Staleness tracking: Add a last updated timestamnp to each data point in the Agent Belief card. Apply an Amber/warning if the data is more than 3 turns old.
+3. Interactive the Root Cause Analysis: Make the RCA badges clickable to filter the Divergence timeline.
+4. Terminal Style reasoning feed: Add a sidebar titled " Agent Reasoning Stream" using rationale traces in real-time.
+5. Aesthetic Polish: slate-800 background, emerald-500 for success, and rose-600 for discrepancies.
+Ensure all charts and timelines have smooth transition states when switching between sample_runs.
+
+Context: I have added the screenshots of how the UI looks currently.
+
+Constraints:
+1. Do not break the existing Langfuse data fetching logic.
+2. Maintain the asynchronous polling logic for the simulation.
+3. Ensure the "What should change next?" section feels like an automated system output, not hard-coded text.
+4. Keep the UI responsive and developer focused, no unnecessary animations
+
+---
+
+_**Agent (copilot/claude-opus-4.6)**_
+
+This is a large, multi-step UI enhancement task. Let me break it down and plan carefully before diving in.
+
+Let me first understand the current codebase structure by reading the key files, then implement each feature systematically.
+
+Let me start by reading the current components to understand what exists.
+
+---
+
+_**User (2026-04-14 01:25:45Z)**_
+
+instead of a hardcoded rule-based engine, use an LLM as a judge
+
+---
+
+_**Agent (copilot/claude-opus-4.6)**_
+
+The user wants to replace the rule-based recommendation engine with an LLM-based approach. I need to:
+
+1. Check how the existing LLM/OpenAI setup works in the codebase
+2. Rewrite `recommendations.py` to use an LLM call instead of hardcoded rules
+3. Make sure the endpoint stays async-compatible
+
+Let me first check how OpenAI is used elsewhere in the project.
+
+---
+
+_**User (2026-04-14 01:30:14Z)**_
+
+There's this next.js hydration error. Here's the documentaion to fix it.
+
+https://nextjs.org/docs/messages/react-hydration-error
+
+_**User (2026-04-14 01:35:37Z)**_
+
+The LLM call for the Insights and the judge happens everytime I switch backl to this page, redsign it so that it happens only once per run.
+
+_**User (2026-04-14 01:38:49Z)**_
+
+Apply the grid visualization changes to the step-bystep tab too
+
+---
+
+_**Agent (copilot/claude-opus-4.6)**_
+
+The user wants to apply the enhanced grid visualization (from WhyInspector) to the StepViewer component (the step-by-step tab). Let me look at both components to understand what needs to be done.
+
+---
+
+_**User (2026-04-14 01:49:38Z)**_
+
+Lets also highlight the partner location on the grid too, with a different color like orange, show the partner's actual location in Agent World, even if in the belief state the location is unknown
+
+---
+
+_**Agent (copilot/claude-opus-4.6)**_
+
+The user wants to show the partner's actual location on the grid in the "Actual World" side of the inspector, even when the belief state shows it as unknown. Currently, the WhyInspector only shows an EnhancedGrid on the belief side. Let me check if there's already a grid
+
+---
+
+_**User (2026-04-14 01:55:40Z)**_
+
+Run new demo runs, to replace the current ones to adjust to new UI patterns
+
+---
+
+_**Agent (copilot/claude-opus-4.6)**_
+
+The user wants to regenerate the demo runs to match the new UI patterns. Let me first look at the demo generation script to understand how it works.
+
+---
+
+_**User (2026-04-14 02:24:19Z)**_
+
+The Locked_door here overlays the next text on the why inspector
+
+---
+
+_**Agent (copilot/claude-opus-4.6)**_
+
+The user is showing that "locked_door" text in the Adjacent Cells section of the Why Inspector is too long and overlaps with neighboring text. I need to fix the CellBadge display for "locked_door" - either abbreviate it or adjust the layout.
+
+Let me look at how the adjacent cells are rendered in WhyInspector.
