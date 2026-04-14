@@ -157,6 +157,7 @@ export function WhyInspector({ event, timelineEvent, gridSize }: Props) {
               knowledge={belief.grid_knowledge}
               agentPos={obs.agent_position}
               partnerPos={belief.partner_location}
+              actualPartnerPos={partnerPos}
               discrepancyPos={discTarget}
               label="belief"
             />
@@ -171,6 +172,11 @@ export function WhyInspector({ event, timelineEvent, gridSize }: Props) {
           <DataRow label="Position" value={`(${obs.agent_position[0]}, ${obs.agent_position[1]})`} />
           <DataRow label="Current Cell" value={obs.current_cell} />
           <DataRow label="Has Key" value={obs.has_key ? "Yes" : "No"} />
+          <DataRow
+            label="Partner Location"
+            value={partnerPos ? `(${partnerPos[0]}, ${partnerPos[1]})` : "Not visible"}
+            highlight={partnerPos !== null}
+          />
           <div className="mt-2">
             <p className="text-xs text-zinc-500 mb-1">Adjacent Cells</p>
             <div className="grid grid-cols-2 gap-1">
@@ -283,6 +289,7 @@ function EnhancedGrid({
   knowledge,
   agentPos,
   partnerPos,
+  actualPartnerPos,
   discrepancyPos,
   label,
 }: {
@@ -291,6 +298,7 @@ function EnhancedGrid({
   knowledge: Record<string, string>;
   agentPos: number[];
   partnerPos?: number[] | null;
+  actualPartnerPos?: number[] | null;
   discrepancyPos?: number[] | null;
   label: string;
 }) {
@@ -317,6 +325,7 @@ function EnhancedGrid({
           const cell = knowledge[key];
           const isAgent = ri === agentPos[0] && ci === agentPos[1];
           const isPartner = partnerPos && ri === partnerPos[0] && ci === partnerPos[1];
+          const isActualPartner = !isPartner && actualPartnerPos && ri === actualPartnerPos[0] && ci === actualPartnerPos[1];
           const isDisc = discrepancyPos && ri === discrepancyPos[0] && ci === discrepancyPos[1];
 
           let cls: string;
@@ -326,6 +335,8 @@ function EnhancedGrid({
             cls = "bg-blue-400 ring-1 ring-blue-300";
           } else if (isPartner) {
             cls = "bg-orange-400 ring-1 ring-orange-300";
+          } else if (isActualPartner) {
+            cls = "bg-orange-500/60 ring-1 ring-orange-400/50 ring-dashed";
           } else if (isDisc) {
             cls = "bg-rose-600 ring-1 ring-rose-400";
             content = "✕";
@@ -339,7 +350,8 @@ function EnhancedGrid({
             `(${ri},${ci})`,
             cell ?? "unknown",
             isAgent ? `[${label === "belief" ? "you" : "agent"}]` : "",
-            isPartner ? "[partner]" : "",
+            isPartner ? "[partner believed]" : "",
+            isActualPartner ? "[partner actual]" : "",
             isDisc ? "[discrepancy]" : "",
           ].filter(Boolean).join(" · ");
 
