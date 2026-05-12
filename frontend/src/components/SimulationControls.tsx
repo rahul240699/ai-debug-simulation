@@ -28,7 +28,7 @@ export function SimulationControls({ onStart, isRunning }: Props) {
   }
 
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 mb-6">
+    <div className="bg-slate-800/50 border border-slate-700/50 rounded-lg p-4 mb-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <button
@@ -68,7 +68,7 @@ export function SimulationControls({ onStart, isRunning }: Props) {
       </div>
 
       {expanded && (
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-4 pt-4 border-t border-zinc-800">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-4 pt-4 border-t border-slate-700/50">
           <Field label="Grid Width" min={4} max={20} value={width} onChange={setWidth} />
           <Field label="Grid Height" min={4} max={20} value={height} onChange={setHeight} />
           <Field label="Max Turns" min={1} max={500} value={maxTurns} onChange={setMaxTurns} />
@@ -80,7 +80,7 @@ export function SimulationControls({ onStart, isRunning }: Props) {
               placeholder="Random"
               value={seed}
               onChange={(e) => setSeed(e.target.value.replace(/\D/g, ""))}
-              className="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-1.5 text-sm text-zinc-200 placeholder:text-zinc-600 focus:outline-none focus:border-zinc-500"
+              className="w-full bg-slate-700/50 border border-slate-600/50 rounded px-2 py-1.5 text-sm text-zinc-200 placeholder:text-zinc-600 focus:outline-none focus:border-slate-500"
             />
           </div>
         </div>
@@ -114,7 +114,7 @@ function Field({
           const v = parseInt(e.target.value, 10);
           if (!isNaN(v) && v >= min && v <= max) onChange(v);
         }}
-        className="w-full bg-zinc-800 border border-zinc-700 rounded px-2 py-1.5 text-sm text-zinc-200 focus:outline-none focus:border-zinc-500"
+        className="w-full bg-slate-700/50 border border-slate-600/50 rounded px-2 py-1.5 text-sm text-zinc-200 focus:outline-none focus:border-slate-500"
       />
     </div>
   );

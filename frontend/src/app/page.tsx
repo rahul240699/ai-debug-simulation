@@ -11,6 +11,8 @@ import { WhyInspector } from "@/components/WhyInspector";
 import { SimulationControls } from "@/components/SimulationControls";
 import { StepViewer } from "@/components/StepViewer";
 import { RunSelector } from "@/components/RunSelector";
+import { PrescriptiveInsights } from "@/components/PrescriptiveInsights";
+import { ReasoningStream } from "@/components/ReasoningStream";
 
 type ViewMode = "diagnosis" | "steps";
 
@@ -24,6 +26,7 @@ export default function DashboardPage() {
   const [viewMode, setViewMode] = useState<ViewMode>("diagnosis");
   const [simStatus, setSimStatus] = useState<SimulationStatus | null>(null);
   const [currentRunId, setCurrentRunId] = useState<string | null>(null);
+  const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Cleanup polling on unmount
@@ -45,6 +48,7 @@ export default function DashboardPage() {
     setData(null);
     setSelectedEvent(null);
     setCurrentRunId(runId);
+    setCategoryFilter(null);
     try {
       const diagnosis = await fetchDiagnosis(runId);
       setData(diagnosis);
@@ -123,8 +127,8 @@ export default function DashboardPage() {
       <main className="max-w-7xl mx-auto px-6 py-8">
         <SimulationControls onStart={handleStart} isRunning={isRunning} />
         <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-8 max-w-md w-full text-center">
-            <div className="w-8 h-8 border-2 border-zinc-600 border-t-emerald-400 rounded-full animate-spin mx-auto mb-4" />
+          <div className="bg-slate-800/50 border border-slate-700/50 rounded-lg p-8 max-w-md w-full text-center">
+            <div className="w-8 h-8 border-2 border-slate-600 border-t-emerald-400 rounded-full animate-spin mx-auto mb-4" />
             <h2 className="text-lg font-semibold text-zinc-200 mb-2">Simulation in Progress…</h2>
             <p className="text-sm text-zinc-400 mb-4">
               {simStatus.grid_size} grid · {simStatus.max_turns / 2} turns × 2 agents = {simStatus.max_turns} steps
@@ -137,7 +141,7 @@ export default function DashboardPage() {
               <span className="text-zinc-500 text-lg"> / {simStatus.max_turns} steps</span>
             </div>
             {/* Progress bar */}
-            <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
+            <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
               <div
                 className="h-full bg-emerald-500 transition-all duration-500 ease-out"
                 style={{ width: `${pct}%` }}
@@ -157,8 +161,8 @@ export default function DashboardPage() {
       <main className="max-w-7xl mx-auto px-6 py-8">
         <SimulationControls onStart={handleStart} isRunning={isRunning} />
         <div className="flex items-center justify-center min-h-[60vh]">
-          <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-8 max-w-md">
-            <h2 className="text-red-400 text-lg font-semibold mb-2">Error</h2>
+          <div className="bg-slate-800/50 border border-rose-500/30 rounded-lg p-8 max-w-md">
+            <h2 className="text-rose-400 text-lg font-semibold mb-2">Error</h2>
             <p className="text-zinc-400 text-sm">{error}</p>
             <p className="text-zinc-500 text-xs mt-4">
               Make sure the backend is running: <code className="text-zinc-300">uvicorn src.main:app --reload</code>
@@ -209,12 +213,12 @@ export default function DashboardPage() {
           {/* Run selector */}
           <RunSelector currentRunId={currentRunId} onSelect={handleSelectRun} />
           {/* View mode toggle */}
-          <div className="flex bg-zinc-800 rounded-lg p-0.5">
+          <div className="flex bg-slate-800 rounded-lg p-0.5">
             <button
               onClick={() => setViewMode("diagnosis")}
-              className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+              className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors duration-200 ${
                 viewMode === "diagnosis"
-                  ? "bg-zinc-700 text-zinc-100"
+                  ? "bg-slate-700 text-zinc-100"
                   : "text-zinc-400 hover:text-zinc-200"
               }`}
             >
@@ -222,19 +226,19 @@ export default function DashboardPage() {
             </button>
             <button
               onClick={() => setViewMode("steps")}
-              className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+              className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors duration-200 ${
                 viewMode === "steps"
-                  ? "bg-zinc-700 text-zinc-100"
+                  ? "bg-slate-700 text-zinc-100"
                   : "text-zinc-400 hover:text-zinc-200"
               }`}
             >
               Step-by-Step
             </button>
           </div>
-          <div className={`px-3 py-1 rounded-full text-sm font-medium ${
+          <div className={`px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300 ${
             data.win
               ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-              : "bg-red-500/10 text-red-400 border border-red-500/20"
+              : "bg-rose-500/10 text-rose-400 border border-rose-600/20"
           }`}>
             {data.win ? "WIN" : "LOSS"}
           </div>
@@ -243,29 +247,51 @@ export default function DashboardPage() {
 
       {viewMode === "diagnosis" ? (
         <>
-          {/* Summary Banner */}
-          <SummaryBanner summary={data.summary} win={data.win} />
+          {/* Summary Banner with clickable RCA badges */}
+          <SummaryBanner
+            summary={data.summary}
+            win={data.win}
+            activeFilter={categoryFilter}
+            onFilterCategory={setCategoryFilter}
+          />
 
           {/* Metrics */}
           <MetricsCards metrics={data.metrics} />
 
-          {/* Main content: Timeline + Inspector */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mt-6">
-            <div className="lg:col-span-2">
+          {/* Main content: Timeline + Inspector + Reasoning Stream */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
+            {/* Timeline */}
+            <div className="lg:col-span-3">
               <DivergenceTimeline
                 timeline={data.timeline}
                 selectedEvent={selectedEvent}
                 onSelectEvent={setSelectedEvent}
+                categoryFilter={categoryFilter}
               />
             </div>
-            <div className="lg:col-span-3">
-              <WhyInspector event={selectedFullEvent} timelineEvent={selectedEvent} />
+            {/* Inspector */}
+            <div className="lg:col-span-5">
+              <WhyInspector
+                event={selectedFullEvent}
+                timelineEvent={selectedEvent}
+                gridSize={data.grid_size}
+              />
+            </div>
+            {/* Reasoning Stream */}
+            <div className="lg:col-span-4">
+              <ReasoningStream
+                events={data.events}
+                highlightTurn={selectedEvent?.turn_number}
+              />
             </div>
           </div>
+
+          {/* Prescriptive Insights */}
+          <PrescriptiveInsights runId={data.run_id} />
         </>
       ) : (
         /* Step-by-Step Viewer */
-        <StepViewer events={data.events} />
+        <StepViewer events={data.events} gridSize={data.grid_size} />
       )}
     </main>
   );

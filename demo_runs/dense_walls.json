@@ -1,5 +1,5 @@
 {
-  "run_id": "b5f3511d4391",
+  "run_id": "60dccf881f0d",
   "label": "dense_walls",
   "seed": 123,
   "grid_size": "8x8",
@@ -9,10 +9,10 @@
   "win": false,
   "events": [
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 0,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:38:59.719225+00:00",
+      "timestamp": "2026-04-14T01:58:53.924451+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -81,10 +81,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 0,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:00.663639+00:00",
+      "timestamp": "2026-04-14T01:58:54.631675+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -153,10 +153,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 1,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:01.487058+00:00",
+      "timestamp": "2026-04-14T01:58:55.308003+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -234,10 +234,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 1,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:02.408047+00:00",
+      "timestamp": "2026-04-14T01:58:56.043535+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -315,10 +315,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 2,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:03.224692+00:00",
+      "timestamp": "2026-04-14T01:58:56.700728+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -399,10 +399,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 2,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:03.839166+00:00",
+      "timestamp": "2026-04-14T01:58:57.334007+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -483,10 +483,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 3,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:04.555634+00:00",
+      "timestamp": "2026-04-14T01:58:58.176207+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -567,10 +567,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 3,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:05.987491+00:00",
+      "timestamp": "2026-04-14T01:58:59.000594+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -651,10 +651,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 4,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:06.962749+00:00",
+      "timestamp": "2026-04-14T01:58:59.782808+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -735,10 +735,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 4,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:07.735343+00:00",
+      "timestamp": "2026-04-14T01:59:00.726200+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -819,10 +819,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 5,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:08.550061+00:00",
+      "timestamp": "2026-04-14T01:59:01.452240+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -903,10 +903,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 5,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:09.191043+00:00",
+      "timestamp": "2026-04-14T01:59:02.165867+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -987,10 +987,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 6,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:09.931543+00:00",
+      "timestamp": "2026-04-14T01:59:03.208155+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -1071,10 +1071,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 6,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:10.804220+00:00",
+      "timestamp": "2026-04-14T01:59:03.825374+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -1155,10 +1155,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 7,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:11.622813+00:00",
+      "timestamp": "2026-04-14T01:59:04.643227+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -1239,10 +1239,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 7,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:12.438117+00:00",
+      "timestamp": "2026-04-14T01:59:05.202807+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -1323,10 +1323,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 8,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:13.260564+00:00",
+      "timestamp": "2026-04-14T01:59:05.975337+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -1407,10 +1407,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 8,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:13.977764+00:00",
+      "timestamp": "2026-04-14T01:59:06.713235+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -1491,10 +1491,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 9,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:14.695732+00:00",
+      "timestamp": "2026-04-14T01:59:07.466993+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -1575,10 +1575,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 9,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:15.367300+00:00",
+      "timestamp": "2026-04-14T01:59:08.127045+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -1659,10 +1659,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 10,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:16.145705+00:00",
+      "timestamp": "2026-04-14T01:59:08.944786+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -1743,10 +1743,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 10,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:17.358668+00:00",
+      "timestamp": "2026-04-14T01:59:09.560909+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -1827,10 +1827,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 11,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:18.118152+00:00",
+      "timestamp": "2026-04-14T01:59:10.376567+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -1911,10 +1911,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 11,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:18.686283+00:00",
+      "timestamp": "2026-04-14T01:59:10.945719+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -1995,10 +1995,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 12,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:19.453619+00:00",
+      "timestamp": "2026-04-14T01:59:11.712774+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -2079,10 +2079,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 12,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:20.223139+00:00",
+      "timestamp": "2026-04-14T01:59:12.301838+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -2163,10 +2163,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 13,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:21.043748+00:00",
+      "timestamp": "2026-04-14T01:59:13.147564+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -2247,10 +2247,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 13,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:21.922769+00:00",
+      "timestamp": "2026-04-14T01:59:13.960577+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -2331,10 +2331,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 14,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:22.652521+00:00",
+      "timestamp": "2026-04-14T01:59:14.686238+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -2415,10 +2415,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 14,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:23.398518+00:00",
+      "timestamp": "2026-04-14T01:59:15.709761+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -2499,10 +2499,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 15,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:24.106884+00:00",
+      "timestamp": "2026-04-14T01:59:16.523051+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -2583,10 +2583,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 15,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:24.715862+00:00",
+      "timestamp": "2026-04-14T01:59:17.136795+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -2667,10 +2667,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 16,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:25.445353+00:00",
+      "timestamp": "2026-04-14T01:59:17.929535+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -2751,10 +2751,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 16,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:26.471540+00:00",
+      "timestamp": "2026-04-14T01:59:18.568529+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -2835,10 +2835,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 17,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:27.390941+00:00",
+      "timestamp": "2026-04-14T01:59:19.490222+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -2919,10 +2919,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 17,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:28.111640+00:00",
+      "timestamp": "2026-04-14T01:59:20.322300+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -3003,10 +3003,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 18,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:28.928029+00:00",
+      "timestamp": "2026-04-14T01:59:21.210711+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -3087,10 +3087,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 18,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:29.681036+00:00",
+      "timestamp": "2026-04-14T01:59:21.832738+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -3171,10 +3171,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 19,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:30.462294+00:00",
+      "timestamp": "2026-04-14T01:59:22.671873+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -3255,10 +3255,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 19,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:31.078474+00:00",
+      "timestamp": "2026-04-14T01:59:23.239957+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -3339,10 +3339,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 20,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:32.100720+00:00",
+      "timestamp": "2026-04-14T01:59:24.000093+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -3423,10 +3423,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 20,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:32.619320+00:00",
+      "timestamp": "2026-04-14T01:59:24.613038+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -3507,10 +3507,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 21,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:33.535922+00:00",
+      "timestamp": "2026-04-14T01:59:25.731197+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -3591,10 +3591,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 21,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:34.458043+00:00",
+      "timestamp": "2026-04-14T01:59:26.766735+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -3675,10 +3675,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 22,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:35.277414+00:00",
+      "timestamp": "2026-04-14T01:59:27.384831+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -3759,10 +3759,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 22,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:35.994265+00:00",
+      "timestamp": "2026-04-14T01:59:28.078236+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -3843,10 +3843,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 23,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:38.969870+00:00",
+      "timestamp": "2026-04-14T01:59:29.075737+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -3927,10 +3927,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 23,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:39.816434+00:00",
+      "timestamp": "2026-04-14T01:59:29.796949+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -4011,10 +4011,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 24,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:40.602519+00:00",
+      "timestamp": "2026-04-14T01:59:30.513082+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -4095,10 +4095,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 24,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:41.186262+00:00",
+      "timestamp": "2026-04-14T01:59:31.084355+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -4179,10 +4179,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 25,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:41.899392+00:00",
+      "timestamp": "2026-04-14T01:59:31.881711+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -4263,10 +4263,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 25,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:42.507968+00:00",
+      "timestamp": "2026-04-14T01:59:32.761897+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -4347,10 +4347,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 26,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:43.371429+00:00",
+      "timestamp": "2026-04-14T01:59:33.522487+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -4431,10 +4431,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 26,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:44.396775+00:00",
+      "timestamp": "2026-04-14T01:59:34.139729+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -4515,10 +4515,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 27,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:45.333544+00:00",
+      "timestamp": "2026-04-14T01:59:35.056765+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -4599,10 +4599,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 27,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:46.950501+00:00",
+      "timestamp": "2026-04-14T01:59:35.624535+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -4683,10 +4683,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 28,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:47.676209+00:00",
+      "timestamp": "2026-04-14T01:59:36.689442+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -4767,10 +4767,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 28,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:48.493245+00:00",
+      "timestamp": "2026-04-14T01:59:37.311087+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -4851,10 +4851,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 29,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:49.262319+00:00",
+      "timestamp": "2026-04-14T01:59:38.061315+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -4935,10 +4935,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 29,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:50.024064+00:00",
+      "timestamp": "2026-04-14T01:59:38.967464+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -5019,10 +5019,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 30,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:50.840499+00:00",
+      "timestamp": "2026-04-14T01:59:40.120135+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -5103,10 +5103,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 30,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:51.456221+00:00",
+      "timestamp": "2026-04-14T01:59:40.770457+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -5187,10 +5187,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 31,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:52.676388+00:00",
+      "timestamp": "2026-04-14T01:59:41.540935+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -5271,10 +5271,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 31,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:53.299073+00:00",
+      "timestamp": "2026-04-14T01:59:42.223181+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -5355,10 +5355,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 32,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:54.126085+00:00",
+      "timestamp": "2026-04-14T01:59:42.956294+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -5439,10 +5439,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 32,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:54.937547+00:00",
+      "timestamp": "2026-04-14T01:59:43.485994+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -5523,10 +5523,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 33,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:55.758478+00:00",
+      "timestamp": "2026-04-14T01:59:44.375377+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -5607,10 +5607,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 33,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:56.449406+00:00",
+      "timestamp": "2026-04-14T01:59:45.605039+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -5691,10 +5691,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 34,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:57.294025+00:00",
+      "timestamp": "2026-04-14T01:59:46.320870+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -5775,10 +5775,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 34,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:57.917187+00:00",
+      "timestamp": "2026-04-14T01:59:47.345746+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -5859,10 +5859,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 35,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:39:58.600466+00:00",
+      "timestamp": "2026-04-14T01:59:48.086862+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -5943,10 +5943,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 35,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:39:59.338709+00:00",
+      "timestamp": "2026-04-14T01:59:48.673957+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -6027,10 +6027,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 36,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:40:00.164931+00:00",
+      "timestamp": "2026-04-14T01:59:49.393323+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -6111,10 +6111,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 36,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:40:00.877719+00:00",
+      "timestamp": "2026-04-14T01:59:49.961167+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -6195,10 +6195,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 37,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:40:01.593553+00:00",
+      "timestamp": "2026-04-14T01:59:50.724809+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -6279,10 +6279,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 37,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:40:02.308715+00:00",
+      "timestamp": "2026-04-14T01:59:51.542448+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -6363,10 +6363,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 38,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:40:03.131672+00:00",
+      "timestamp": "2026-04-14T01:59:52.876275+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -6447,10 +6447,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 38,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:40:03.849150+00:00",
+      "timestamp": "2026-04-14T01:59:53.954635+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -6531,10 +6531,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 39,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-09T22:40:04.673066+00:00",
+      "timestamp": "2026-04-14T01:59:54.759967+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -6615,10 +6615,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "b5f3511d4391",
+      "run_id": "60dccf881f0d",
       "turn_number": 39,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-09T22:40:05.381764+00:00",
+      "timestamp": "2026-04-14T01:59:56.457722+00:00",
       "observed_state": {
         "agent_position": [
           4,

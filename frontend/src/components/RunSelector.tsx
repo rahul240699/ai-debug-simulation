@@ -32,7 +32,7 @@ export function RunSelector({ currentRunId, onSelect }: Props) {
     <div className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-zinc-800 border border-zinc-700 hover:border-zinc-600 text-sm text-zinc-300 transition-colors"
+        className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 hover:border-slate-600 text-sm text-zinc-300 transition-colors"
       >
         <span className="text-zinc-500">Run:</span>
         <span className="font-medium truncate max-w-[160px]">
@@ -42,7 +42,7 @@ export function RunSelector({ currentRunId, onSelect }: Props) {
       </button>
 
       {open && (
-        <div className="absolute top-full mt-1 right-0 z-50 bg-zinc-900 border border-zinc-700 rounded-lg shadow-xl min-w-[280px] max-h-[320px] overflow-y-auto">
+        <div className="absolute top-full mt-1 right-0 z-50 bg-slate-900 border border-slate-700 rounded-lg shadow-xl min-w-[280px] max-h-[320px] overflow-y-auto">
           {runs.map((run) => (
             <button
               key={run.run_id}
@@ -50,8 +50,8 @@ export function RunSelector({ currentRunId, onSelect }: Props) {
                 onSelect(run.run_id);
                 setOpen(false);
               }}
-              className={`w-full text-left px-3 py-2 flex items-center gap-3 hover:bg-zinc-800 transition-colors ${
-                run.run_id === currentRunId ? "bg-zinc-800" : ""
+              className={`w-full text-left px-3 py-2 flex items-center gap-3 hover:bg-slate-800 transition-colors ${
+                run.run_id === currentRunId ? "bg-slate-800" : ""
               }`}
             >
               {/* Win/Loss badge */}
