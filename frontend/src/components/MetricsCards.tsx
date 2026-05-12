@@ -19,7 +19,7 @@ export function MetricsCards({ metrics }: Props) {
         label="Discrepancy Count"
         value={String(metrics.discrepancy_count)}
         description="Times an agent hit a wall or failed an interaction"
-        color="rose"
+        color="red"
       />
       <MetricCard
         label="Coordination Efficiency"
@@ -44,22 +44,22 @@ function MetricCard({
   label: string;
   value: string;
   description: string;
-  color: "amber" | "rose" | "blue";
+  color: "amber" | "red" | "blue";
 }) {
   const borderColor = {
     amber: "border-amber-500/20",
-    rose: "border-rose-600/20",
+    red: "border-red-500/20",
     blue: "border-blue-500/20",
   }[color];
 
   const valueColor = {
     amber: "text-amber-400",
-    rose: "text-rose-400",
+    red: "text-red-400",
     blue: "text-blue-400",
   }[color];
 
   return (
-    <div className={`bg-slate-800/50 border ${borderColor} rounded-lg p-4 transition-colors duration-300`}>
+    <div className={`bg-zinc-900 border ${borderColor} rounded-lg p-4`}>
       <p className="text-xs text-zinc-500 uppercase tracking-wide font-medium">{label}</p>
       <p className={`text-2xl font-bold mt-1 ${valueColor}`}>{value}</p>
       <p className="text-xs text-zinc-600 mt-1">{description}</p>

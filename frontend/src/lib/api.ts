@@ -82,16 +82,3 @@ export async function fetchRuns(): Promise<RunSummary[]> {
   if (!res.ok) throw new Error(`Failed to fetch runs: ${res.status}`);
   return res.json();
 }
-
-export interface Recommendation {
-  category: string;
-  icon: string;
-  title: string;
-  detail: string;
-}
-
-export async function fetchRecommendations(runId: string = "latest"): Promise<Recommendation[]> {
-  const res = await fetch(`${BASE}/recommendations?run_id=${encodeURIComponent(runId)}`);
-  if (!res.ok) throw new Error(`Failed to fetch recommendations: ${res.status}`);
-  return res.json();
-}

@@ -30,8 +30,5 @@ class GraphState(TypedDict):
     belief_after: dict[str, Any]
     message_correlation_ids: list[str]
 
-    # Rationale extracted from the LLM response text.
-    rationale: str
-
     # LangGraph message history — accumulates across turns.
     messages: Annotated[list, add_messages]
