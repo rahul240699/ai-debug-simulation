@@ -121,16 +121,6 @@ def think_node(state: GraphState) -> dict[str, Any]:
         # Fallback: if the model didn't call a tool, default to wait.
         action_name, action_args = "wait", {}
 
-    # Extract rationale from model's text content alongside the tool call.
-    rationale = ""
-    if isinstance(response.content, str):
-        rationale = response.content.strip()
-    elif isinstance(response.content, list):
-        rationale = " ".join(
-            block.get("text", "") for block in response.content
-            if isinstance(block, dict) and block.get("type") == "text"
-        ).strip()
-
     logger.info(
         "Turn %d | %s chose %s(%s)",
         state["dungeon"].turn_number,
@@ -142,7 +132,6 @@ def think_node(state: GraphState) -> dict[str, Any]:
     return {
         "action_name": action_name,
         "action_args": action_args,
-        "rationale": rationale,
         "messages": [system_msg, turn_msg, response],
     }
 
@@ -214,7 +203,7 @@ def record_node(state: GraphState) -> dict[str, Any]:
         observed_state=state["observation"],
         belief_before=belief_before,
         belief_after=belief_after,
-        rationale=state.get("rationale", ""),
+        rationale="",  # could extract from LLM response if desired
         chosen_action=state["action_name"],
         action_args=state["action_args"],
         action_result=action_result,

@@ -1,5 +1,5 @@
 {
-  "run_id": "6defe317d4b6",
+  "run_id": "eef90500b624",
   "label": "default_loss",
   "seed": 99,
   "grid_size": "8x8",
@@ -9,10 +9,10 @@
   "win": true,
   "events": [
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 0,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T01:57:03.505049+00:00",
+      "timestamp": "2026-04-09T22:36:41.964860+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -93,10 +93,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 0,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T01:57:04.108409+00:00",
+      "timestamp": "2026-04-09T22:36:42.620719+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -165,10 +165,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 1,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T01:57:05.162606+00:00",
+      "timestamp": "2026-04-09T22:36:43.651794+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -252,7 +252,7 @@
         "game_over": false,
         "win": false,
         "correlation_ids": [
-          "68154507"
+          "ad61abbd"
         ]
       },
       "discrepancy_detected": true,
@@ -272,17 +272,17 @@
         }
       ],
       "message_correlation_ids": [
-        "68154507"
+        "ad61abbd"
       ],
       "dm_query": null,
       "dm_advice": null,
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 1,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T01:57:05.766300+00:00",
+      "timestamp": "2026-04-09T22:36:44.307047+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -375,10 +375,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 2,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T01:57:06.538287+00:00",
+      "timestamp": "2026-04-09T22:36:45.295199+00:00",
       "observed_state": {
         "agent_position": [
           4,
@@ -465,10 +465,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 2,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T01:57:07.127650+00:00",
+      "timestamp": "2026-04-09T22:36:45.866212+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -498,7 +498,7 @@
             "from": "agent_a",
             "text": "I'm at (4,2) and I don't have the key. What is your location?",
             "sent_turn": 1,
-            "correlation_id": "68154507"
+            "correlation_id": "ad61abbd"
           }
         ]
       },
@@ -586,17 +586,17 @@
         }
       ],
       "message_correlation_ids": [
-        "68154507"
+        "ad61abbd"
       ],
       "dm_query": null,
       "dm_advice": null,
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 3,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T01:57:08.199206+00:00",
+      "timestamp": "2026-04-09T22:36:46.825337+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -676,7 +676,7 @@
       "rationale": "",
       "chosen_action": "send_message",
       "action_args": {
-        "text": "I am at (3,2) and see the exit to the east. Do you have the key?"
+        "text": "I am at (3,2) and I see the exit to the east. Do you have the key?"
       },
       "action_result": {
         "success": true,
@@ -685,11 +685,11 @@
           3,
           2
         ],
-        "message": "Message sent (will be delivered next turn): \"I am at (3,2) and see the exit to the east. Do you have the \"",
+        "message": "Message sent (will be delivered next turn): \"I am at (3,2) and I see the exit to the east. Do you have th\"",
         "game_over": false,
         "win": false,
         "correlation_ids": [
-          "6ed60e15"
+          "e9a5dc10"
         ]
       },
       "discrepancy_detected": true,
@@ -709,17 +709,17 @@
         }
       ],
       "message_correlation_ids": [
-        "6ed60e15"
+        "e9a5dc10"
       ],
       "dm_query": null,
       "dm_advice": null,
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 3,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T01:57:09.075093+00:00",
+      "timestamp": "2026-04-09T22:36:47.507444+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -834,10 +834,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 4,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T01:57:10.120641+00:00",
+      "timestamp": "2026-04-09T22:36:48.666611+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -936,7 +936,7 @@
         "game_over": false,
         "win": false,
         "correlation_ids": [
-          "cbb8ec95"
+          "cfc2f435"
         ]
       },
       "discrepancy_detected": true,
@@ -956,17 +956,17 @@
         }
       ],
       "message_correlation_ids": [
-        "cbb8ec95"
+        "cfc2f435"
       ],
       "dm_query": null,
       "dm_advice": null,
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "6defe317d4b6",
+      "run_id": "eef90500b624",
       "turn_number": 4,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T01:57:11.797008+00:00",
+      "timestamp": "2026-04-09T22:36:49.589183+00:00",
       "observed_state": {
         "agent_position": [
           3,
@@ -994,9 +994,9 @@
         "messages_received": [
           {
             "from": "agent_a",
-            "text": "I am at (3,2) and see the exit to the east. Do you have the key?",
+            "text": "I am at (3,2) and I see the exit to the east. Do you have the key?",
             "sent_turn": 3,
-            "correlation_id": "6ed60e15"
+            "correlation_id": "e9a5dc10"
           }
         ]
       },
@@ -1075,7 +1075,7 @@
       "discrepancy_details": null,
       "belief_diff": null,
       "message_correlation_ids": [
-        "6ed60e15"
+        "e9a5dc10"
       ],
       "dm_query": null,
       "dm_advice": null,

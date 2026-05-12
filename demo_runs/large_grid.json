@@ -1,5 +1,5 @@
 {
-  "run_id": "48e3236361dd",
+  "run_id": "865c8811ff95",
   "label": "large_grid",
   "seed": 55,
   "grid_size": "10x10",
@@ -9,10 +9,10 @@
   "win": false,
   "events": [
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 0,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T01:59:57.921337+00:00",
+      "timestamp": "2026-04-09T22:40:06.470377+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -84,10 +84,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 0,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T01:59:58.544725+00:00",
+      "timestamp": "2026-04-09T22:40:07.078070+00:00",
       "observed_state": {
         "agent_position": [
           8,
@@ -156,10 +156,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 1,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T01:59:59.324890+00:00",
+      "timestamp": "2026-04-09T22:40:07.772398+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -241,10 +241,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 1,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T01:59:59.940129+00:00",
+      "timestamp": "2026-04-09T22:40:08.455855+00:00",
       "observed_state": {
         "agent_position": [
           7,
@@ -322,10 +322,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 2,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:00.905248+00:00",
+      "timestamp": "2026-04-09T22:40:10.606188+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -419,10 +419,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 2,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:01.511950+00:00",
+      "timestamp": "2026-04-09T22:40:11.588464+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -506,10 +506,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 3,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:03.240094+00:00",
+      "timestamp": "2026-04-09T22:40:13.117471+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -592,10 +592,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 3,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:03.936692+00:00",
+      "timestamp": "2026-04-09T22:40:13.780035+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -685,10 +685,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 4,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:05.611638+00:00",
+      "timestamp": "2026-04-09T22:40:14.505624+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -773,10 +773,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 4,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:06.391264+00:00",
+      "timestamp": "2026-04-09T22:40:15.113683+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -869,10 +869,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 5,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:08.044926+00:00",
+      "timestamp": "2026-04-09T22:40:16.647032+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -957,10 +957,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 5,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:08.917124+00:00",
+      "timestamp": "2026-04-09T22:40:17.570080+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -1053,10 +1053,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 6,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:09.749943+00:00",
+      "timestamp": "2026-04-09T22:40:18.850038+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -1141,10 +1141,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 6,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:10.340033+00:00",
+      "timestamp": "2026-04-09T22:40:19.716514+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -1237,10 +1237,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 7,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:11.921448+00:00",
+      "timestamp": "2026-04-09T22:40:21.052009+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -1325,10 +1325,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 7,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:12.742024+00:00",
+      "timestamp": "2026-04-09T22:40:21.689539+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -1421,10 +1421,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 8,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:14.278723+00:00",
+      "timestamp": "2026-04-09T22:40:23.101166+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -1509,10 +1509,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 8,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:15.606793+00:00",
+      "timestamp": "2026-04-09T22:40:23.714665+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -1605,10 +1605,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 9,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:17.339698+00:00",
+      "timestamp": "2026-04-09T22:40:25.251764+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -1693,10 +1693,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 9,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:18.167924+00:00",
+      "timestamp": "2026-04-09T22:40:25.865834+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -1789,10 +1789,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 10,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:18.921272+00:00",
+      "timestamp": "2026-04-09T22:40:26.683835+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -1877,10 +1877,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 10,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:19.911250+00:00",
+      "timestamp": "2026-04-09T22:40:27.297124+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -1973,10 +1973,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 11,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:21.343946+00:00",
+      "timestamp": "2026-04-09T22:40:28.934799+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -2061,10 +2061,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 11,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:22.108328+00:00",
+      "timestamp": "2026-04-09T22:40:29.755754+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -2157,10 +2157,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 12,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:22.983910+00:00",
+      "timestamp": "2026-04-09T22:40:30.573412+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -2245,10 +2245,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 12,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:24.064145+00:00",
+      "timestamp": "2026-04-09T22:40:31.232141+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -2341,10 +2341,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 13,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:25.557309+00:00",
+      "timestamp": "2026-04-09T22:40:32.602040+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -2429,10 +2429,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 13,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:26.462587+00:00",
+      "timestamp": "2026-04-09T22:40:33.542835+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -2525,10 +2525,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 14,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:28.104811+00:00",
+      "timestamp": "2026-04-09T22:40:34.982015+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -2613,10 +2613,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 14,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:28.920316+00:00",
+      "timestamp": "2026-04-09T22:40:35.694692+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -2709,10 +2709,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 15,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:30.352438+00:00",
+      "timestamp": "2026-04-09T22:40:37.127500+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -2797,10 +2797,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 15,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:31.044292+00:00",
+      "timestamp": "2026-04-09T22:40:38.459337+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -2893,10 +2893,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 16,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:31.889391+00:00",
+      "timestamp": "2026-04-09T22:40:39.277768+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -2981,10 +2981,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 16,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:32.810339+00:00",
+      "timestamp": "2026-04-09T22:40:40.201284+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -3077,10 +3077,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 17,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:34.404084+00:00",
+      "timestamp": "2026-04-09T22:40:41.408197+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -3165,10 +3165,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 17,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:35.136530+00:00",
+      "timestamp": "2026-04-09T22:40:42.446439+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -3261,10 +3261,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 18,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:36.806259+00:00",
+      "timestamp": "2026-04-09T22:40:43.885841+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -3349,10 +3349,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 18,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:37.662094+00:00",
+      "timestamp": "2026-04-09T22:40:45.010062+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -3445,10 +3445,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 19,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:39.550916+00:00",
+      "timestamp": "2026-04-09T22:40:46.478432+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -3533,10 +3533,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 19,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:40.594489+00:00",
+      "timestamp": "2026-04-09T22:40:47.060062+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -3629,10 +3629,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 20,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:41.618197+00:00",
+      "timestamp": "2026-04-09T22:40:48.286976+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -3717,10 +3717,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 20,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:42.436891+00:00",
+      "timestamp": "2026-04-09T22:40:48.903138+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -3813,10 +3813,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 21,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:44.180147+00:00",
+      "timestamp": "2026-04-09T22:40:50.280491+00:00",
       "observed_state": {
         "agent_position": [
           1,
@@ -3901,10 +3901,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 21,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:45.103210+00:00",
+      "timestamp": "2026-04-09T22:40:50.883562+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -3997,10 +3997,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 22,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:46.635865+00:00",
+      "timestamp": "2026-04-09T22:40:51.946229+00:00",
       "observed_state": {
         "agent_position": [
           2,
@@ -4061,39 +4061,34 @@
         "last_updated_turn": 22
       },
       "rationale": "",
-      "chosen_action": "send_message",
+      "chosen_action": "move",
       "action_args": {
-        "text": "I have the key and I'm currently at (2,5). I will move to the locked door."
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "send_message",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Message sent (will be delivered next turn): \"I have the key and I'm currently at (2,5). I will move to th\"",
+        "message": "Moved north to (1,5).",
         "game_over": false,
-        "win": false,
-        "correlation_ids": [
-          "a89ceec8"
-        ]
+        "win": false
       },
       "discrepancy_detected": false,
       "discrepancy_details": null,
       "belief_diff": null,
-      "message_correlation_ids": [
-        "a89ceec8"
-      ],
+      "message_correlation_ids": [],
       "dm_query": null,
       "dm_advice": null,
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 22,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:47.453176+00:00",
+      "timestamp": "2026-04-09T22:40:52.586515+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -4186,18 +4181,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 23,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:49.429064+00:00",
+      "timestamp": "2026-04-09T22:40:53.799033+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -4252,16 +4247,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -4274,10 +4269,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 23,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:50.423013+00:00",
+      "timestamp": "2026-04-09T22:40:54.470569+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -4293,14 +4288,7 @@
         "visible_entities": [],
         "turn_number": 23,
         "has_key": false,
-        "messages_received": [
-          {
-            "from": "agent_a",
-            "text": "I have the key and I'm currently at (2,5). I will move to the locked door.",
-            "sent_turn": 22,
-            "correlation_id": "a89ceec8"
-          }
-        ]
+        "messages_received": []
       },
       "belief_before": {
         "grid_knowledge": {
@@ -4349,7 +4337,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 23
       },
       "rationale": "",
@@ -4371,26 +4359,24 @@
       "discrepancy_detected": false,
       "discrepancy_details": null,
       "belief_diff": null,
-      "message_correlation_ids": [
-        "a89ceec8"
-      ],
+      "message_correlation_ids": [],
       "dm_query": null,
       "dm_advice": null,
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 24,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:52.062110+00:00",
+      "timestamp": "2026-04-09T22:40:55.356557+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -4445,16 +4431,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -4467,10 +4453,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 24,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:53.084169+00:00",
+      "timestamp": "2026-04-09T22:40:56.287001+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -4510,7 +4496,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 23
       },
       "belief_after": {
@@ -4535,7 +4521,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 24
       },
       "rationale": "",
@@ -4563,18 +4549,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 25,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:54.621286+00:00",
+      "timestamp": "2026-04-09T22:40:57.638078+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -4629,16 +4615,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -4651,10 +4637,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 25,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:55.418716+00:00",
+      "timestamp": "2026-04-09T22:40:58.325788+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -4694,7 +4680,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 24
       },
       "belief_after": {
@@ -4719,7 +4705,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 25
       },
       "rationale": "",
@@ -4747,18 +4733,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 26,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:57.181227+00:00",
+      "timestamp": "2026-04-09T22:41:00.578636+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -4813,16 +4799,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -4835,10 +4821,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 26,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:58.104297+00:00",
+      "timestamp": "2026-04-09T22:41:01.499709+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -4878,7 +4864,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 25
       },
       "belief_after": {
@@ -4903,7 +4889,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 26
       },
       "rationale": "",
@@ -4931,18 +4917,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 27,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:00:58.856051+00:00",
+      "timestamp": "2026-04-09T22:41:03.249507+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -4997,16 +4983,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -5019,10 +5005,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 27,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:00:59.844381+00:00",
+      "timestamp": "2026-04-09T22:41:03.965208+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -5062,7 +5048,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 26
       },
       "belief_after": {
@@ -5087,7 +5073,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 27
       },
       "rationale": "",
@@ -5115,18 +5101,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 28,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:01.524286+00:00",
+      "timestamp": "2026-04-09T22:41:05.793097+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -5181,16 +5167,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -5203,10 +5189,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 28,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:02.548208+00:00",
+      "timestamp": "2026-04-09T22:41:06.619258+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -5246,7 +5232,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 27
       },
       "belief_after": {
@@ -5271,7 +5257,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 28
       },
       "rationale": "",
@@ -5299,18 +5285,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 29,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:04.093489+00:00",
+      "timestamp": "2026-04-09T22:41:08.260358+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -5365,16 +5351,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -5387,10 +5373,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 29,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:04.863835+00:00",
+      "timestamp": "2026-04-09T22:41:08.975700+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -5430,7 +5416,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 28
       },
       "belief_after": {
@@ -5455,7 +5441,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 29
       },
       "rationale": "",
@@ -5483,18 +5469,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 30,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:06.373061+00:00",
+      "timestamp": "2026-04-09T22:41:10.511782+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -5549,16 +5535,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -5571,10 +5557,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 30,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:07.142087+00:00",
+      "timestamp": "2026-04-09T22:41:11.334722+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -5614,7 +5600,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 29
       },
       "belief_after": {
@@ -5639,7 +5625,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 30
       },
       "rationale": "",
@@ -5667,18 +5653,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 31,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:09.060065+00:00",
+      "timestamp": "2026-04-09T22:41:12.874616+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -5733,16 +5719,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -5755,10 +5741,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 31,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:09.688600+00:00",
+      "timestamp": "2026-04-09T22:41:13.583675+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -5798,7 +5784,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 30
       },
       "belief_after": {
@@ -5823,7 +5809,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 31
       },
       "rationale": "",
@@ -5851,18 +5837,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 32,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:11.483038+00:00",
+      "timestamp": "2026-04-09T22:41:15.183533+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -5917,16 +5903,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -5939,10 +5925,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 32,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:12.441428+00:00",
+      "timestamp": "2026-04-09T22:41:15.776705+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -5982,7 +5968,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 31
       },
       "belief_after": {
@@ -6007,7 +5993,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 32
       },
       "rationale": "",
@@ -6035,18 +6021,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 33,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:14.053677+00:00",
+      "timestamp": "2026-04-09T22:41:17.284934+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -6101,16 +6087,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -6123,10 +6109,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 33,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:14.946565+00:00",
+      "timestamp": "2026-04-09T22:41:18.090767+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -6166,7 +6152,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 32
       },
       "belief_after": {
@@ -6191,7 +6177,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 33
       },
       "rationale": "",
@@ -6219,18 +6205,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 34,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:16.865680+00:00",
+      "timestamp": "2026-04-09T22:41:20.853461+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -6285,16 +6271,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -6307,10 +6293,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 34,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:19.489478+00:00",
+      "timestamp": "2026-04-09T22:41:21.776450+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -6350,7 +6336,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 33
       },
       "belief_after": {
@@ -6375,7 +6361,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 34
       },
       "rationale": "",
@@ -6403,18 +6389,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 35,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:21.568714+00:00",
+      "timestamp": "2026-04-09T22:41:23.625270+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -6469,16 +6455,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -6491,10 +6477,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 35,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:22.272242+00:00",
+      "timestamp": "2026-04-09T22:41:24.232813+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -6534,7 +6520,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 34
       },
       "belief_after": {
@@ -6559,7 +6545,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 35
       },
       "rationale": "",
@@ -6587,18 +6573,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 36,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:23.908892+00:00",
+      "timestamp": "2026-04-09T22:41:25.257196+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -6653,16 +6639,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -6675,10 +6661,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 36,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:24.651673+00:00",
+      "timestamp": "2026-04-09T22:41:25.947672+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -6718,7 +6704,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 35
       },
       "belief_after": {
@@ -6743,7 +6729,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 36
       },
       "rationale": "",
@@ -6771,18 +6757,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 37,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:25.484240+00:00",
+      "timestamp": "2026-04-09T22:41:27.609161+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -6837,16 +6823,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -6859,10 +6845,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 37,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:26.172750+00:00",
+      "timestamp": "2026-04-09T22:41:28.262407+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -6902,7 +6888,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 36
       },
       "belief_after": {
@@ -6927,7 +6913,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 37
       },
       "rationale": "",
@@ -6955,18 +6941,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 38,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:27.916910+00:00",
+      "timestamp": "2026-04-09T22:41:29.577508+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -7021,16 +7007,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -7043,10 +7029,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 38,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:28.721189+00:00",
+      "timestamp": "2026-04-09T22:41:30.274773+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -7086,7 +7072,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 37
       },
       "belief_after": {
@@ -7111,7 +7097,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 38
       },
       "rationale": "",
@@ -7139,18 +7125,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 39,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:30.042360+00:00",
+      "timestamp": "2026-04-09T22:41:32.022882+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -7205,16 +7191,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -7227,10 +7213,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 39,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:30.635949+00:00",
+      "timestamp": "2026-04-09T22:41:32.655340+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -7270,7 +7256,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 38
       },
       "belief_after": {
@@ -7295,7 +7281,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 39
       },
       "rationale": "",
@@ -7323,18 +7309,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 40,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:31.999661+00:00",
+      "timestamp": "2026-04-09T22:41:34.004049+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -7389,16 +7375,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -7411,10 +7397,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 40,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:32.746658+00:00",
+      "timestamp": "2026-04-09T22:41:34.576137+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -7454,7 +7440,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 39
       },
       "belief_after": {
@@ -7479,7 +7465,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 40
       },
       "rationale": "",
@@ -7507,18 +7493,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 41,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:34.148288+00:00",
+      "timestamp": "2026-04-09T22:41:35.602221+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -7573,16 +7559,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -7595,10 +7581,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 41,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:34.766620+00:00",
+      "timestamp": "2026-04-09T22:41:36.420435+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -7638,7 +7624,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 40
       },
       "belief_after": {
@@ -7663,7 +7649,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 41
       },
       "rationale": "",
@@ -7691,18 +7677,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 42,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:36.339287+00:00",
+      "timestamp": "2026-04-09T22:41:37.840087+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -7757,16 +7743,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -7779,10 +7765,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 42,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:37.120450+00:00",
+      "timestamp": "2026-04-09T22:41:38.482639+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -7822,7 +7808,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 41
       },
       "belief_after": {
@@ -7847,7 +7833,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 42
       },
       "rationale": "",
@@ -7875,18 +7861,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 43,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:37.913785+00:00",
+      "timestamp": "2026-04-09T22:41:40.211189+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -7941,16 +7927,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -7963,10 +7949,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 43,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:38.533472+00:00",
+      "timestamp": "2026-04-09T22:41:40.897957+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -8006,7 +7992,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 42
       },
       "belief_after": {
@@ -8031,7 +8017,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 43
       },
       "rationale": "",
@@ -8059,18 +8045,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 44,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:40.459914+00:00",
+      "timestamp": "2026-04-09T22:41:42.453950+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -8125,16 +8111,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -8147,10 +8133,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 44,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:41.084880+00:00",
+      "timestamp": "2026-04-09T22:41:44.407699+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -8190,7 +8176,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 43
       },
       "belief_after": {
@@ -8215,7 +8201,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 44
       },
       "rationale": "",
@@ -8243,18 +8229,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 45,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:42.751674+00:00",
+      "timestamp": "2026-04-09T22:41:45.741355+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -8309,16 +8295,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -8331,10 +8317,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 45,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:43.563904+00:00",
+      "timestamp": "2026-04-09T22:41:46.350220+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -8374,7 +8360,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 44
       },
       "belief_after": {
@@ -8399,7 +8385,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 45
       },
       "rationale": "",
@@ -8427,18 +8413,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 46,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:45.208099+00:00",
+      "timestamp": "2026-04-09T22:41:47.279104+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -8493,16 +8479,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -8515,10 +8501,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 46,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:45.861506+00:00",
+      "timestamp": "2026-04-09T22:41:48.178062+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -8558,7 +8544,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 45
       },
       "belief_after": {
@@ -8583,7 +8569,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 46
       },
       "rationale": "",
@@ -8611,18 +8597,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 47,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:47.433915+00:00",
+      "timestamp": "2026-04-09T22:41:50.638822+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -8677,16 +8663,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -8699,10 +8685,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 47,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:48.053392+00:00",
+      "timestamp": "2026-04-09T22:41:51.268989+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -8742,7 +8728,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 46
       },
       "belief_after": {
@@ -8767,7 +8753,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 47
       },
       "rationale": "",
@@ -8795,18 +8781,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 48,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:49.980788+00:00",
+      "timestamp": "2026-04-09T22:41:52.543635+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -8861,16 +8847,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -8883,10 +8869,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 48,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:52.719908+00:00",
+      "timestamp": "2026-04-09T22:41:53.161440+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -8926,7 +8912,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 47
       },
       "belief_after": {
@@ -8951,7 +8937,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 48
       },
       "rationale": "",
@@ -8979,18 +8965,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 49,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:53.448795+00:00",
+      "timestamp": "2026-04-09T22:41:54.750304+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -9045,16 +9031,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -9067,10 +9053,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 49,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:54.526026+00:00",
+      "timestamp": "2026-04-09T22:41:55.374294+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -9110,7 +9096,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 48
       },
       "belief_after": {
@@ -9135,7 +9121,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 49
       },
       "rationale": "",
@@ -9163,18 +9149,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 50,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:56.165741+00:00",
+      "timestamp": "2026-04-09T22:41:56.140635+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -9229,16 +9215,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -9251,10 +9237,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 50,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:56.789734+00:00",
+      "timestamp": "2026-04-09T22:41:57.011734+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -9294,7 +9280,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 49
       },
       "belief_after": {
@@ -9319,7 +9305,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 50
       },
       "rationale": "",
@@ -9347,18 +9333,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 51,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:01:58.266178+00:00",
+      "timestamp": "2026-04-09T22:41:58.427699+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -9413,16 +9399,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -9435,10 +9421,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 51,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:01:58.870177+00:00",
+      "timestamp": "2026-04-09T22:41:58.970580+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -9478,7 +9464,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 50
       },
       "belief_after": {
@@ -9503,7 +9489,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 51
       },
       "rationale": "",
@@ -9531,18 +9517,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 52,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:00.363896+00:00",
+      "timestamp": "2026-04-09T22:42:00.292122+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -9597,16 +9583,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -9619,10 +9605,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 52,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:01.081735+00:00",
+      "timestamp": "2026-04-09T22:42:01.306714+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -9662,7 +9648,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 51
       },
       "belief_after": {
@@ -9687,7 +9673,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 52
       },
       "rationale": "",
@@ -9715,18 +9701,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 53,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:02.296223+00:00",
+      "timestamp": "2026-04-09T22:42:03.478543+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -9781,16 +9767,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -9803,10 +9789,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 53,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:03.025166+00:00",
+      "timestamp": "2026-04-09T22:42:04.133544+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -9846,7 +9832,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 52
       },
       "belief_after": {
@@ -9871,7 +9857,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 53
       },
       "rationale": "",
@@ -9899,18 +9885,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 54,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:04.416472+00:00",
+      "timestamp": "2026-04-09T22:42:05.809637+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -9965,16 +9951,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -9987,10 +9973,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 54,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:05.117403+00:00",
+      "timestamp": "2026-04-09T22:42:06.679955+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -10030,7 +10016,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 53
       },
       "belief_after": {
@@ -10055,7 +10041,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 54
       },
       "rationale": "",
@@ -10083,18 +10069,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 55,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:06.683991+00:00",
+      "timestamp": "2026-04-09T22:42:08.218086+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -10149,16 +10135,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -10171,10 +10157,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 55,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:07.562896+00:00",
+      "timestamp": "2026-04-09T22:42:08.809093+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -10214,7 +10200,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 54
       },
       "belief_after": {
@@ -10239,7 +10225,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 55
       },
       "rationale": "",
@@ -10267,18 +10253,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 56,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:09.475418+00:00",
+      "timestamp": "2026-04-09T22:42:10.490019+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -10333,16 +10319,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -10355,10 +10341,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 56,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:10.146299+00:00",
+      "timestamp": "2026-04-09T22:42:11.119447+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -10398,7 +10384,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 55
       },
       "belief_after": {
@@ -10423,7 +10409,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 56
       },
       "rationale": "",
@@ -10451,18 +10437,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 57,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:12.139566+00:00",
+      "timestamp": "2026-04-09T22:42:12.570197+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -10517,16 +10503,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -10539,10 +10525,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 57,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:12.915536+00:00",
+      "timestamp": "2026-04-09T22:42:13.490448+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -10582,7 +10568,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 56
       },
       "belief_after": {
@@ -10607,7 +10593,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 57
       },
       "rationale": "",
@@ -10635,18 +10621,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 58,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:14.440461+00:00",
+      "timestamp": "2026-04-09T22:42:15.004641+00:00",
       "observed_state": {
         "agent_position": [
-          1,
+          2,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "wall",
+          "north": "empty",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -10701,16 +10687,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "south"
+        "direction": "north"
       },
       "action_result": {
         "success": true,
-        "action": "move_south",
+        "action": "move_north",
         "new_position": [
-          2,
+          1,
           5
         ],
-        "message": "Moved south to (2,5).",
+        "message": "Moved north to (1,5).",
         "game_over": false,
         "win": false
       },
@@ -10723,10 +10709,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 58,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:15.071639+00:00",
+      "timestamp": "2026-04-09T22:42:15.744887+00:00",
       "observed_state": {
         "agent_position": [
           6,
@@ -10766,7 +10752,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 57
       },
       "belief_after": {
@@ -10791,7 +10777,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 58
       },
       "rationale": "",
@@ -10819,18 +10805,18 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 59,
       "agent_id": "agent_a",
-      "timestamp": "2026-04-14T02:02:16.569564+00:00",
+      "timestamp": "2026-04-09T22:42:17.059618+00:00",
       "observed_state": {
         "agent_position": [
-          2,
+          1,
           5
         ],
         "current_cell": "empty",
         "adjacent_cells": {
-          "north": "empty",
+          "north": "wall",
           "south": "empty",
           "east": "empty",
           "west": "empty"
@@ -10885,16 +10871,16 @@
       "rationale": "",
       "chosen_action": "move",
       "action_args": {
-        "direction": "north"
+        "direction": "south"
       },
       "action_result": {
         "success": true,
-        "action": "move_north",
+        "action": "move_south",
         "new_position": [
-          1,
+          2,
           5
         ],
-        "message": "Moved north to (1,5).",
+        "message": "Moved south to (2,5).",
         "game_over": false,
         "win": false
       },
@@ -10907,10 +10893,10 @@
       "dm_stale_turns_count": null
     },
     {
-      "run_id": "48e3236361dd",
+      "run_id": "865c8811ff95",
       "turn_number": 59,
       "agent_id": "agent_b",
-      "timestamp": "2026-04-14T02:02:17.258636+00:00",
+      "timestamp": "2026-04-09T22:42:17.668503+00:00",
       "observed_state": {
         "agent_position": [
           5,
@@ -10950,7 +10936,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 58
       },
       "belief_after": {
@@ -10975,7 +10961,7 @@
         "door_location": null,
         "partner_location": null,
         "has_key": false,
-        "partner_has_key": true,
+        "partner_has_key": false,
         "last_updated_turn": 59
       },
       "rationale": "",
@@ -11003,5 +10989,5 @@
       "dm_stale_turns_count": null
     }
   ],
-  "final_grid": "# # # # # # # # # #\n# . # . . Aa . . . #\n# . D . . . . . . #\n# . # . . . . . . #\n# . . . . # . . . #\n# . . . # . . . . #\n# . # . . Ab . . E #\n# # . . # . . . . #\n# . . . . . . . . #\n# # # # # # # # # #"
+  "final_grid": "# # # # # # # # # #\n# . # . . . . . . #\n# . D . . Aa . . . #\n# . # . . . . . . #\n# . . . . # . . . #\n# . . . # . . . . #\n# . # . . Ab . . E #\n# # . . # . . . . #\n# . . . . . . . . #\n# # # # # # # # # #"
 }
